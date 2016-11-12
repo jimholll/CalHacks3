@@ -31,5 +31,20 @@ class ExerciseViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    @IBAction func gymmed(_ sender: Any) {
+        
+        let defaults = UserDefaults.standard
+        
+        let currentEXP = defaults.integer(forKey: defaultsKeys.keyEXP)
+        defaults.set(currentEXP + 1, forKey:defaultsKeys.keyEXP)
+        
+        print(currentEXP)
+        
+        defaults.synchronize()
+        //update levels too!
+        performSegue(withIdentifier: "fromExerciseToHome", sender: nil)
+    }
 
 }
