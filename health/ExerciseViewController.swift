@@ -36,14 +36,8 @@ class ExerciseViewController: UIViewController {
     @IBAction func gymmed(_ sender: Any) {
         
         let defaults = UserDefaults.standard
-        
-        let currentEXP = defaults.integer(forKey: defaultsKeys.keyEXP)
-        defaults.set(currentEXP + 1, forKey:defaultsKeys.keyEXP)
-        
-        print(currentEXP)
-        
+        gainExp(amount: 10)
         defaults.synchronize()
-        //update levels too!
         performSegue(withIdentifier: "fromExerciseToGym", sender: nil)
     }
 

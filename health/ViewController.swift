@@ -50,3 +50,16 @@ struct defaultsKeys {
     static let keyLevel = "levelStringKey"
     static let keyEXP = "expStringKey"
 }
+
+func gainExp(amount: Int){
+    let lv = UserDefaults.standard.integer(forKey: defaultsKeys.keyLevel)
+    let exp = UserDefaults.standard.integer(forKey: defaultsKeys.keyEXP)
+    if(exp + amount >= lv * 25){
+        UserDefaults.standard.set((exp+amount) - (lv * 25), forKey: defaultsKeys.keyEXP)
+        UserDefaults.standard.set(lv + 1, forKey:defaultsKeys.keyLevel)
+    } else {
+    UserDefaults.standard.set(exp + amount, forKey:defaultsKeys.keyEXP)
+    }
+    print(lv)
+    print(exp)
+}
