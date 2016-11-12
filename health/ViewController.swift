@@ -60,6 +60,7 @@ func gainExp(amount: Int){
     } else {
     UserDefaults.standard.set(exp + amount, forKey:defaultsKeys.keyEXP)
     }
-    print(lv)
-    print(exp)
+    UserDefaults.standard.synchronize()
+    print( UserDefaults.standard.integer(forKey: defaultsKeys.keyLevel))
+    print(UserDefaults.standard.integer(forKey: defaultsKeys.keyEXP))
 }

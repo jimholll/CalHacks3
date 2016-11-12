@@ -1,5 +1,5 @@
 //
-//  ExerciseViewController.swift
+//  EatViewController.swift
 //  health
 //
 //  Created by Sean Chen on 11/12/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExerciseViewController: UIViewController {
+class EatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,17 +31,10 @@ class ExerciseViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
-    @IBAction func gymmed(_ sender: Any) {
-        gainExp(amount: 20)
-        performSegue(withIdentifier: "fromExerciseToGym", sender: nil)
-    }
-    
-    @IBAction func exercised(_ sender: Any) {
-        
-        
-    }
-    
 
+    @IBAction func eatHealthy(_ sender: Any) {
+        gainExp(amount: 10)
+        
+        performSegue(withIdentifier: "fromEatToEatHealthy", sender: nil)
+    }
 }

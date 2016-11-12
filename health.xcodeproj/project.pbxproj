@@ -16,6 +16,7 @@
 		140DD8EA1DD70D6A00A5AB2E /* healthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD8E91DD70D6A00A5AB2E /* healthUITests.swift */; };
 		140DD8FA1DD70ED900A5AB2E /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD8F91DD70ED900A5AB2E /* ExerciseViewController.swift */; };
 		140DD8FC1DD7266900A5AB2E /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD8FB1DD7266900A5AB2E /* GymViewController.swift */; };
+		140DD8FE1DD7330C00A5AB2E /* EatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD8FD1DD7330C00A5AB2E /* EatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		140DD8EB1DD70D6A00A5AB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		140DD8F91DD70ED900A5AB2E /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		140DD8FB1DD7266900A5AB2E /* GymViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
+		140DD8FD1DD7330C00A5AB2E /* EatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				140DD8D51DD70D6A00A5AB2E /* Info.plist */,
 				140DD8F91DD70ED900A5AB2E /* ExerciseViewController.swift */,
 				140DD8FB1DD7266900A5AB2E /* GymViewController.swift */,
+				140DD8FD1DD7330C00A5AB2E /* EatViewController.swift */,
 			);
 			path = health;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140DD8CC1DD70D6A00A5AB2E /* ViewController.swift in Sources */,
+				140DD8FE1DD7330C00A5AB2E /* EatViewController.swift in Sources */,
 				140DD8FA1DD70ED900A5AB2E /* ExerciseViewController.swift in Sources */,
 				140DD8FC1DD7266900A5AB2E /* GymViewController.swift in Sources */,
 				140DD8CA1DD70D6A00A5AB2E /* AppDelegate.swift in Sources */,
