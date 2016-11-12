@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhU-JV-so5">
-                                <rect key="frame" x="159" y="432" width="57" height="30"/>
+                                <frame key="frameInset" minX="159" minY="432" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="exercise"/>
                                 <connections>
@@ -30,12 +28,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o86-nP-t8b">
-                                <rect key="frame" x="171" y="541" width="32" height="30"/>
+                                <frame key="frameInset" minX="171" minY="541" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="food"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lv: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp7-fF-4Yv">
-                                <rect key="frame" x="16" y="20" width="88" height="21"/>
+                                <frame key="frameInset" minX="16" minY="20" width="88" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -65,14 +63,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-sg-vaa">
-                                <rect key="frame" x="150" y="194" width="75" height="30"/>
                                 <state key="normal" title="I lift weight"/>
                                 <connections>
                                     <action selector="gymmed:" destination="rMe-Tp-Fy3" eventType="touchUpInside" id="oiI-9S-rcH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vid-e7-WtP">
-                                <rect key="frame" x="155" y="413" width="65" height="30"/>
                                 <state key="normal" title="I exercise"/>
                             </button>
                         </subviews>
@@ -105,30 +101,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9W-tR-6jo">
-                                <rect key="frame" x="276" y="583" width="83" height="30"/>
+                                <frame key="frameInset" minX="276" minY="583" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stat Update"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-bO-NH0">
-                                <rect key="frame" x="172" y="441" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-bO-NH0">
                                 <state key="normal" title="ok!"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Nyv-0S-MOu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6An-6v-NZN">
-                                <rect key="frame" x="164" y="504" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6An-6v-NZN">
                                 <state key="normal" title="bonus!"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VH7-tD-ERq"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VH7-tD-ERq" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="2aa-MG-Z4r"/>
+                            <constraint firstItem="VH7-tD-ERq" firstAttribute="centerX" secondItem="6An-6v-NZN" secondAttribute="centerX" id="6g2-dv-SSF"/>
+                            <constraint firstItem="VH7-tD-ERq" firstAttribute="leading" secondItem="xBE-Aa-U4u" secondAttribute="leadingMargin" constant="51" id="6t8-hm-tfO"/>
+                            <constraint firstItem="VH7-tD-ERq" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" constant="-123" id="LIn-Eg-i8y"/>
+                            <constraint firstItem="VH7-tD-ERq" firstAttribute="centerX" secondItem="lCl-bO-NH0" secondAttribute="centerX" id="RaL-4J-K1q"/>
+                            <constraint firstItem="6An-6v-NZN" firstAttribute="top" secondItem="lCl-bO-NH0" secondAttribute="bottom" constant="33" id="Uce-Pk-dud"/>
+                            <constraint firstItem="VH7-tD-ERq" firstAttribute="top" secondItem="9L0-0F-qy2" secondAttribute="bottom" constant="50" id="acn-7M-BHM"/>
+                            <constraint firstItem="VH7-tD-ERq" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="qWM-ES-bXh"/>
+                            <constraint firstItem="lCl-bO-NH0" firstAttribute="top" secondItem="VH7-tD-ERq" secondAttribute="bottom" constant="90" id="w8R-51-HI0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="VH7-tD-ERq" id="yLF-XX-sce"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmB-54-Dd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="36"/>
+            <point key="canvasLocation" x="1549.5999999999999" y="35.532233883058474"/>
         </scene>
     </scenes>
 </document>
