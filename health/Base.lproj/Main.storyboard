@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhU-JV-so5">
-                                <frame key="frameInset" minX="159" minY="432" width="57" height="30"/>
+                                <rect key="frame" x="159" y="432" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="exercise"/>
                                 <connections>
@@ -28,30 +32,52 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o86-nP-t8b">
-                                <frame key="frameInset" minX="171" minY="541" width="32" height="30"/>
+                                <rect key="frame" x="171" y="541" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="food"/>
                                 <connections>
                                     <segue destination="55k-Gy-vOL" kind="show" id="bum-nB-v0i"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lv: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp7-fF-4Yv">
-                                <frame key="frameInset" minX="16" minY="20" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Lv: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp7-fF-4Yv">
+                                <rect key="frame" x="16" y="20" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-2K-uki">
+                                <rect key="frame" x="200" y="20" width="142" height="21"/>
+                                <color key="backgroundColor" red="0.51518699521533984" green="1" blue="0.084081678897509615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPr-IS-55n">
+                                <rect key="frame" x="242" y="37" width="100" height="25"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g1n-2K-uki" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:30" id="d8a-Cn-HDo"/>
+                            <constraint firstItem="kp7-fF-4Yv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="h3v-6x-pBk"/>
+                            <constraint firstItem="vPr-IS-55n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="hNe-gj-Lh5"/>
+                            <constraint firstItem="g1n-2K-uki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="13:8" id="ml7-pT-jbC"/>
+                            <constraint firstItem="g1n-2K-uki" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="sgA-kx-C77"/>
+                            <constraint firstItem="g1n-2K-uki" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="tYn-zp-k0Q"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="greenBar" destination="g1n-2K-uki" id="7f7-Fl-Gyc"/>
                         <outlet property="level" destination="kp7-fF-4Yv" id="ENC-J9-z5x"/>
+                        <outlet property="whiteBar" destination="vPr-IS-55n" id="HLW-GM-xKb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="130.88455772113943"/>
+            <point key="canvasLocation" x="135" y="421"/>
         </scene>
         <!--Eat View Controller-->
         <scene sceneID="Mx8-hy-N16">
@@ -69,6 +95,9 @@
                                 <rect key="frame" x="121" y="563" width="159" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="I didn't eat unhealthy"/>
+                                <connections>
+                                    <action selector="notUnhealthy:" destination="55k-Gy-vOL" eventType="touchUpInside" id="JU9-Po-MAs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-gQ-X4f">
                                 <rect key="frame" x="152" y="427" width="97" height="30"/>
@@ -87,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="069-2A-WJi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="866.71664167916049"/>
+            <point key="canvasLocation" x="1148" y="1146"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="82D-qc-4Zh">
@@ -120,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQo-Uz-sT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="870"/>
+            <point key="canvasLocation" x="1954" y="1146"/>
         </scene>
         <!--Exercise View Controller-->
         <scene sceneID="Wf8-dE-v01">
@@ -135,12 +164,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-sg-vaa">
+                                <rect key="frame" x="150" y="194" width="75" height="30"/>
                                 <state key="normal" title="I lift weight"/>
                                 <connections>
                                     <action selector="gymmed:" destination="rMe-Tp-Fy3" eventType="touchUpInside" id="oiI-9S-rcH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vid-e7-WtP">
+                                <rect key="frame" x="155" y="413" width="65" height="30"/>
                                 <state key="normal" title="I exercise"/>
                                 <connections>
                                     <action selector="exercised:" destination="rMe-Tp-Fy3" eventType="touchUpInside" id="gM7-QJ-emJ"/>
@@ -157,11 +188,40 @@
                     </view>
                     <connections>
                         <segue destination="Bly-Fe-JqZ" kind="show" identifier="fromExerciseToGym" id="FMb-lV-kHB"/>
+                        <segue destination="ezo-Vm-sH5" kind="show" identifier="fromExerciseToCardio" id="Vfk-wx-KlG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8r-tV-YE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797.60000000000002" y="36.431784107946029"/>
+            <point key="canvasLocation" x="948" y="-185"/>
+        </scene>
+        <!--Cardio View Controller-->
+        <scene sceneID="jDB-9d-6Ox">
+            <objects>
+                <viewController id="ezo-Vm-sH5" customClass="CardioViewController" customModule="health" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GcH-CN-Ouw"/>
+                        <viewControllerLayoutGuide type="bottom" id="tfv-wM-UVX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W7G-cu-Uki">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-l9-cLI">
+                                <rect key="frame" x="157" y="373" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ok!"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="nnI-xC-GiK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgz-PL-9uQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878" y="252"/>
         </scene>
         <!--Gym View Controller-->
         <scene sceneID="BBw-5p-bit">
@@ -176,20 +236,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9W-tR-6jo">
-                                <frame key="frameInset" minX="276" minY="583" width="83" height="30"/>
+                                <rect key="frame" x="276" y="583" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stat Update"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-bO-NH0">
+                                <rect key="frame" x="172.5" y="441" width="30" height="30"/>
                                 <state key="normal" title="ok!"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Nyv-0S-MOu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6An-6v-NZN">
+                                <rect key="frame" x="164" y="504" width="47" height="30"/>
                                 <state key="normal" title="bonus!"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VH7-tD-ERq"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VH7-tD-ERq">
+                                <rect key="frame" x="67" y="70" width="241" height="281"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -210,10 +274,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmB-54-Dd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549.5999999999999" y="35.532233883058474"/>
+            <point key="canvasLocation" x="1878" y="-457"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u5p-2g-iTE"/>
+        <segue reference="nnI-xC-GiK"/>
     </inferredMetricsTieBreakers>
 </document>

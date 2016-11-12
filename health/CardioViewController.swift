@@ -1,5 +1,5 @@
 //
-//  EatViewController.swift
+//  CardioViewController.swift
 //  health
 //
 //  Created by Sean Chen on 11/12/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EatViewController: UIViewController {
+class CardioViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +32,4 @@ class EatViewController: UIViewController {
     }
     */
 
-    @IBAction func eatHealthy(_ sender: Any) {
-        gainExp(amount: 10)
-        performSegue(withIdentifier: "fromEatToEatHealthy", sender: nil)
-    }
-    
-    @IBAction func notUnhealthy(_ sender: Any) {
-        gainExp(amount: 5)
-        performSegue(withIdentifier: "fromEatToEatHealthy", sender: nil)
-        
-    }
-    
 }
