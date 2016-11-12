@@ -20,6 +20,10 @@ class ViewController: UIViewController {
             UserDefaults.standard.set(1, forKey:defaultsKeys.keyLevel)
         }
         
+        let lv = UserDefaults.standard.integer(forKey: defaultsKeys.keyLevel)
+        
+
+        
         /*if let lv = UserDefaults.standard.value(forKey: "highscore") {
             // do something here when a highscore exists
             UserDefaults.set(lv + 1, forKey:defaultsKeys.keyEXP)
@@ -29,8 +33,7 @@ class ViewController: UIViewController {
             // no level exists
             
         }*/
-        
-        level.text = String(describing: UserDefaults.standard.value(forKey: defaultsKeys.keyLevel))
+        level.text = "Lv: " + String(describing: lv)
     }
 
     override func didReceiveMemoryWarning() {
