@@ -44,7 +44,7 @@ class ExerciseViewController: UIViewController {
         
         defaults.synchronize()
         //update levels too!
-        performSegue(withIdentifier: "fromExerciseToHome", sender: nil)
+        performSegue(withIdentifier: "fromExerciseToGym", sender: nil)
     }
 
 }
