@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
         
         homeScreenDude.animationImages = findImages(level: lv)
-        homeScreenDude.animationDuration = 0.75
+        homeScreenDude.animationDuration = 1.0
         homeScreenDude.startAnimating()
     }
 
@@ -115,15 +115,15 @@ func findImages(level: Int) -> Array<UIImage>{
                       "level150012"]
         
     } else {
-        imageNames = ["level150001", "level150002", "level150003",
-                      "level150004",
-                      "level150005",
-                      "level150006",
-                      "level150007",
-                      "level150008",
-                      "level150010",
-                      "level150011",
-                      "level150012"]
+        imageNames = ["level15real0001", "level15real0002", "level15real0003",
+                      "level15real0004",
+                      "level15real0005",
+                      "level15real0006",
+                      "level15real0007",
+                      "level15real0008",
+                      "level15real0010",
+                      "level15real0011",
+                      "level15real0012"]
     }
     
     var images = [UIImage]()

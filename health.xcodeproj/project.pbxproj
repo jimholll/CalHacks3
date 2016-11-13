@@ -21,6 +21,9 @@
 		140DD9021DD7EDC300A5AB2E /* LevelUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */; };
 		140DD9041DD7F3CD00A5AB2E /* EatHealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */; };
 		140DD9061DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9051DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift */; };
+		38F6F0611DD86518007C1443 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F6F0601DD86518007C1443 /* StatsViewController.swift */; };
+		38F6F0651DD86E27007C1443 /* myfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38F6F0641DD86E27007C1443 /* myfont.ttf */; };
+		38F6F0671DD87163007C1443 /* ComicJensFreePro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38F6F0661DD87163007C1443 /* ComicJensFreePro-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelUpViewController.swift; path = ../LevelUpViewController.swift; sourceTree = "<group>"; };
 		140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatHealthyViewController.swift; sourceTree = "<group>"; };
 		140DD9051DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatNotUnhealthyViewController.swift; sourceTree = "<group>"; };
+		38F6F0601DD86518007C1443 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		38F6F0641DD86E27007C1443 /* myfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = myfont.ttf; sourceTree = "<group>"; };
+		38F6F0661DD87163007C1443 /* ComicJensFreePro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicJensFreePro-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +120,10 @@
 				140DD8C91DD70D6A00A5AB2E /* AppDelegate.swift */,
 				140DD8CB1DD70D6A00A5AB2E /* ViewController.swift */,
 				140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */,
+				38F6F0641DD86E27007C1443 /* myfont.ttf */,
+				38F6F0661DD87163007C1443 /* ComicJensFreePro-Regular.ttf */,
 				140DD8CD1DD70D6A00A5AB2E /* Main.storyboard */,
+				38F6F0601DD86518007C1443 /* StatsViewController.swift */,
 				140DD8FF1DD76A1700A5AB2E /* CardioViewController.swift */,
 				140DD8D01DD70D6A00A5AB2E /* Assets.xcassets */,
 				140DD8D21DD70D6A00A5AB2E /* LaunchScreen.storyboard */,
@@ -253,9 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F6F0671DD87163007C1443 /* ComicJensFreePro-Regular.ttf in Resources */,
 				140DD8D41DD70D6A00A5AB2E /* LaunchScreen.storyboard in Resources */,
 				140DD8D11DD70D6A00A5AB2E /* Assets.xcassets in Resources */,
 				140DD8CF1DD70D6A00A5AB2E /* Main.storyboard in Resources */,
+				38F6F0651DD86E27007C1443 /* myfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +299,7 @@
 				140DD9001DD76A1700A5AB2E /* CardioViewController.swift in Sources */,
 				140DD8CA1DD70D6A00A5AB2E /* AppDelegate.swift in Sources */,
 				140DD9021DD7EDC300A5AB2E /* LevelUpViewController.swift in Sources */,
+				38F6F0611DD86518007C1443 /* StatsViewController.swift in Sources */,
 				140DD9061DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
