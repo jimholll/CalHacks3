@@ -114,10 +114,16 @@ func findImages(level: Int) -> Array<UIImage>{
                       "level150011",
                       "level150012"]
         
-    } else if (level < 20) {
-        
     } else {
-        
+        imageNames = ["level150001", "level150002", "level150003",
+                      "level150004",
+                      "level150005",
+                      "level150006",
+                      "level150007",
+                      "level150008",
+                      "level150010",
+                      "level150011",
+                      "level150012"]
     }
     
     var images = [UIImage]()
