@@ -34,7 +34,7 @@ class ExerciseViewController: UIViewController {
     
     
     @IBAction func gymmed(_ sender: Any) {
-        gainExp(amount: 20)
+        gainExp(amount: 100)
         performSegue(withIdentifier: "fromExerciseToGym", sender: nil)
     }
     

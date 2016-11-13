@@ -3,14 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="ComicJensFreePro-Regular.ttf">
-            <string>ComicJensFreePro</string>
-        </array>
-        <array key="kidkosmic.ttf">
+        <array key="kidkosmic2.ttf">
             <string>KidKosmic</string>
         </array>
     </customFonts>
@@ -27,8 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhU-JV-so5">
-                                <frame key="frameInset" minX="45" minY="392" width="284" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhU-JV-so5">
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="I exercised!">
@@ -38,14 +35,7 @@
                                     <segue destination="rMe-Tp-Fy3" kind="show" id="jTc-Ev-XIr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Lv: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp7-fF-4Yv">
-                                <frame key="frameInset" minX="16" minY="20" width="120" height="30"/>
-                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-2K-uki">
-                                <frame key="frameInset" minX="200" minY="20" width="142" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-2K-uki">
                                 <color key="backgroundColor" red="0.51518699521533984" green="1" blue="0.084081678897509615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPr-IS-55n">
@@ -55,11 +45,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXe-dO-vMZ">
                                 <frame key="frameInset" minX="67" minY="103" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="expbar" translatesAutoresizingMaskIntoConstraints="NO" id="psu-86-7MP">
-                                <frame key="frameInset" minX="196" minY="49" width="151" height="51"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o86-nP-t8b">
-                                <frame key="frameInset" minX="67" minY="504" width="247" height="67"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expbar" translatesAutoresizingMaskIntoConstraints="NO" id="psu-86-7MP"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o86-nP-t8b">
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="I ate well!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,29 +55,33 @@
                                     <segue destination="55k-Gy-vOL" kind="show" id="bum-nB-v0i"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lv: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp7-fF-4Yv">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="psu-86-7MP" firstAttribute="centerX" secondItem="g1n-2K-uki" secondAttribute="centerX" id="360-YW-gxJ"/>
+                            <constraint firstItem="GhU-JV-so5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6K2-3y-Frt"/>
                             <constraint firstItem="psu-86-7MP" firstAttribute="width" secondItem="g1n-2K-uki" secondAttribute="width" multiplier="1.1" id="6Ln-Xe-8Qr"/>
-                            <constraint firstItem="o86-nP-t8b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hso-ck-6LQ"/>
+                            <constraint firstItem="o86-nP-t8b" firstAttribute="top" secondItem="GhU-JV-so5" secondAttribute="bottom" constant="38" id="7jH-H4-3vT"/>
+                            <constraint firstItem="o86-nP-t8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CyB-sY-KMa"/>
+                            <constraint firstItem="GhU-JV-so5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="372" id="Ef4-lV-drG"/>
                             <constraint firstItem="iXe-dO-vMZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mdd-yt-PwY"/>
                             <constraint firstItem="iXe-dO-vMZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="P7N-KT-Fv0"/>
-                            <constraint firstItem="o86-nP-t8b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PG9-fP-TVd"/>
                             <constraint firstItem="psu-86-7MP" firstAttribute="height" secondItem="g1n-2K-uki" secondAttribute="height" multiplier="1.1" id="QNZ-b1-lNK"/>
-                            <constraint firstItem="kp7-fF-4Yv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bR1-BX-bKh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kp7-fF-4Yv" secondAttribute="leading" id="X1e-ej-UXK"/>
                             <constraint firstItem="g1n-2K-uki" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:30" id="d8a-Cn-HDo"/>
-                            <constraint firstItem="kp7-fF-4Yv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="h3v-6x-pBk"/>
                             <constraint firstItem="vPr-IS-55n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="hNe-gj-Lh5"/>
-                            <constraint firstItem="GhU-JV-so5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jwb-Mq-bbc"/>
                             <constraint firstItem="vPr-IS-55n" firstAttribute="height" secondItem="g1n-2K-uki" secondAttribute="height" id="kt3-Ej-GAv"/>
                             <constraint firstItem="iXe-dO-vMZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="8:12" id="lSp-OZ-fbc"/>
                             <constraint firstItem="psu-86-7MP" firstAttribute="centerY" secondItem="g1n-2K-uki" secondAttribute="centerY" id="m08-IN-ImF"/>
                             <constraint firstItem="g1n-2K-uki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="13:8" id="ml7-pT-jbC"/>
-                            <constraint firstItem="GhU-JV-so5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="372" id="otv-cf-zEw"/>
                             <constraint firstItem="g1n-2K-uki" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="sgA-kx-C77"/>
                             <constraint firstItem="g1n-2K-uki" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="tYn-zp-k0Q"/>
-                            <constraint firstItem="o86-nP-t8b" firstAttribute="top" secondItem="GhU-JV-so5" secondAttribute="bottom" constant="37" id="z1r-5A-iQJ"/>
+                            <constraint firstItem="kp7-fF-4Yv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="uAR-lZ-hbf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -116,35 +107,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-r5-YHC">
-                                <frame key="frameInset" minX="30" minY="395" width="312" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
-                                <state key="normal" title="I didn't eat unhealthy">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="notUnhealthy:" destination="55k-Gy-vOL" eventType="touchUpInside" id="JU9-Po-MAs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-gQ-X4f">
-                                <frame key="frameInset" minX="30" minY="117" width="312" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
-                                <state key="normal" title="I ate healthy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-gQ-X4f">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="U0O-0H-XXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <state key="normal" title="I ate healthily">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="eatHealthy:" destination="55k-Gy-vOL" eventType="touchUpInside" id="2SN-Dd-Prr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-r5-YHC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="yhb-Nh-JN5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <state key="normal" title="I didn't eat unhealthily">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="notUnhealthy:" destination="55k-Gy-vOL" eventType="touchUpInside" id="JU9-Po-MAs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Gc-r5-YHC" firstAttribute="leading" secondItem="k3u-dP-Wak" secondAttribute="leadingMargin" constant="14" id="42A-ZW-2RB"/>
+                            <constraint firstItem="4Gc-r5-YHC" firstAttribute="centerX" secondItem="k3u-dP-Wak" secondAttribute="centerX" id="Xdm-l2-eeO"/>
+                            <constraint firstItem="eRE-gQ-X4f" firstAttribute="centerX" secondItem="k3u-dP-Wak" secondAttribute="centerX" id="cqr-NU-lqR"/>
+                            <constraint firstItem="eRE-gQ-X4f" firstAttribute="top" secondItem="S5e-zJ-szX" secondAttribute="bottom" constant="122" id="hQo-QX-pzU"/>
+                            <constraint firstItem="eRE-gQ-X4f" firstAttribute="centerX" secondItem="k3u-dP-Wak" secondAttribute="centerX" id="lHB-rW-q6w"/>
+                            <constraint firstItem="F6W-ps-YSh" firstAttribute="top" secondItem="4Gc-r5-YHC" secondAttribute="bottom" constant="179" id="lcd-hU-k1R"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="healthyEater" destination="L6K-7l-dNc" id="t7x-ka-6NU"/>
-                        <segue destination="aFE-EI-SVA" kind="show" identifier="fromEatToEatHealthy" id="ZjX-C2-ND9"/>
-                        <segue destination="MVX-Fe-WJ9" kind="show" identifier="fromEatToEatNotUnhealthy" id="XLw-v8-YAC"/>
+                        <segue destination="aFE-EI-SVA" kind="show" identifier="fromEatToEatHealthy" animates="NO" id="ZjX-C2-ND9"/>
+                        <segue destination="MVX-Fe-WJ9" kind="show" identifier="fromEatToEatNotUnhealthy" animates="NO" id="XLw-v8-YAC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="069-2A-WJi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -163,24 +164,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpF-6p-hHR">
-                                <frame key="frameInset" minX="116" minY="555" width="143" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
-                                <state key="normal" title="bonus!">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="bonus:" destination="aFE-EI-SVA" eventType="touchUpInside" id="65V-c1-Q7f"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L6K-7l-dNc">
                                 <frame key="frameInset" minX="67" minY="87" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meC-ds-KGP">
-                                <frame key="frameInset" minX="120" minY="426" width="135" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meC-ds-KGP">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="ok!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -188,10 +176,23 @@
                                     <action selector="ok:" destination="aFE-EI-SVA" eventType="touchUpInside" id="23E-Re-FYp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpF-6p-hHR">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
+                                <state key="normal" title="bonus!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bonus:" destination="aFE-EI-SVA" eventType="touchUpInside" id="65V-c1-Q7f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fpF-6p-hHR" firstAttribute="top" secondItem="meC-ds-KGP" secondAttribute="bottom" constant="75" id="EoE-qI-ZsM"/>
+                            <constraint firstItem="meC-ds-KGP" firstAttribute="top" secondItem="h1m-Mz-iUK" secondAttribute="bottom" constant="371" id="GlF-Jq-sKi"/>
                             <constraint firstItem="L6K-7l-dNc" firstAttribute="centerX" secondItem="Sw8-Be-qcG" secondAttribute="centerX" id="M7o-o1-62f"/>
+                            <constraint firstItem="fpF-6p-hHR" firstAttribute="centerX" secondItem="Sw8-Be-qcG" secondAttribute="centerX" id="Mjr-2p-VF7"/>
+                            <constraint firstItem="meC-ds-KGP" firstAttribute="centerX" secondItem="Sw8-Be-qcG" secondAttribute="centerX" id="Rci-3O-yXW"/>
                             <constraint firstItem="L6K-7l-dNc" firstAttribute="height" secondItem="Sw8-Be-qcG" secondAttribute="height" id="iPd-sH-hgK"/>
                             <constraint firstItem="L6K-7l-dNc" firstAttribute="centerY" secondItem="Sw8-Be-qcG" secondAttribute="centerY" multiplier="2:3" id="m7N-rG-RSf"/>
                         </constraints>
@@ -218,24 +219,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDA-QT-T6x">
-                                <frame key="frameInset" minX="112" minY="318" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
-                                <state key="normal" title="ok!">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="ok:" destination="MVX-Fe-WJ9" eventType="touchUpInside" id="gCy-cW-mHs"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-qI-QCE">
                                 <frame key="frameInset" minX="67" minY="73" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXC-Ro-wMb">
-                                <frame key="frameInset" minX="114" minY="437" width="146" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXC-Ro-wMb">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="bonus!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -243,12 +231,25 @@
                                     <action selector="bonus:" destination="MVX-Fe-WJ9" eventType="touchUpInside" id="kpv-Lg-Cc5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDA-QT-T6x">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
+                                <state key="normal" title="ok!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ok:" destination="MVX-Fe-WJ9" eventType="touchUpInside" id="gCy-cW-mHs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6wU-qI-QCE" firstAttribute="centerX" secondItem="0ug-R5-2bh" secondAttribute="centerX" multiplier="2:3" id="B4L-jQ-XNV"/>
+                            <constraint firstItem="jDA-QT-T6x" firstAttribute="top" secondItem="1NT-Do-aat" secondAttribute="bottom" constant="371" id="LY2-UK-z9P"/>
                             <constraint firstItem="6wU-qI-QCE" firstAttribute="height" secondItem="0ug-R5-2bh" secondAttribute="height" id="MIh-ZF-DhA"/>
                             <constraint firstItem="6wU-qI-QCE" firstAttribute="centerY" secondItem="0ug-R5-2bh" secondAttribute="centerY" multiplier="2:3" id="fe5-jV-sAh"/>
+                            <constraint firstItem="jDA-QT-T6x" firstAttribute="centerX" secondItem="0ug-R5-2bh" secondAttribute="centerX" id="hwU-nQ-zbl"/>
+                            <constraint firstItem="NXC-Ro-wMb" firstAttribute="centerX" secondItem="0ug-R5-2bh" secondAttribute="centerX" id="imi-3c-2db"/>
+                            <constraint firstItem="NXC-Ro-wMb" firstAttribute="top" secondItem="jDA-QT-T6x" secondAttribute="bottom" constant="75" id="vFM-jM-WZ9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -273,17 +274,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-sg-vaa">
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
-                                <state key="normal" title="I lifted some weights">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cO5-sg-vaa" propertyAccessControl="none">
+                                <frame key="frameInset" minX="7" minY="164" width="360" height="85"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <state key="normal" title="I lifted weights">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="gymmed:" destination="rMe-Tp-Fy3" eventType="touchUpInside" id="oiI-9S-rcH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vid-e7-WtP">
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vid-e7-WtP">
+                                <frame key="frameInset" minX="52" minY="367" width="271" height="78"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="I exercised">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -295,19 +298,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Vid-e7-WtP" firstAttribute="centerX" secondItem="lVX-bb-cUn" secondAttribute="centerX" id="Fws-DX-Fm9"/>
+                            <constraint firstItem="Vid-e7-WtP" firstAttribute="top" secondItem="cO5-sg-vaa" secondAttribute="bottom" constant="118" id="GlH-0r-FvZ"/>
                             <constraint firstItem="cO5-sg-vaa" firstAttribute="top" secondItem="ViG-y2-swN" secondAttribute="bottom" constant="174" id="cMh-hn-9Tu"/>
-                            <constraint firstItem="vB8-Ui-k1S" firstAttribute="top" secondItem="Vid-e7-WtP" secondAttribute="bottom" constant="224" id="huo-d4-5rc"/>
                             <constraint firstItem="cO5-sg-vaa" firstAttribute="centerX" secondItem="lVX-bb-cUn" secondAttribute="centerX" id="uJr-ev-aMa"/>
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="Bly-Fe-JqZ" kind="show" identifier="fromExerciseToGym" id="FMb-lV-kHB"/>
-                        <segue destination="ezo-Vm-sH5" kind="show" identifier="fromExerciseToCardio" id="Vfk-wx-KlG"/>
+                        <segue destination="Bly-Fe-JqZ" kind="show" identifier="fromExerciseToGym" animates="NO" id="FMb-lV-kHB"/>
+                        <segue destination="ezo-Vm-sH5" kind="show" identifier="fromExerciseToCardio" animates="NO" id="Vfk-wx-KlG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8r-tV-YE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="-185"/>
+            <point key="canvasLocation" x="948" y="-185.75712143928038"/>
         </scene>
         <!--Cardio View Controller-->
         <scene sceneID="jDB-9d-6Ox">
@@ -324,21 +327,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-U9-he4">
                                 <frame key="frameInset" minX="67" minY="99" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8An-jV-KU9">
-                                <frame key="frameInset" minX="98" minY="469" width="179" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
-                                <state key="normal" title="bonus!">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="bonus:" destination="ezo-Vm-sH5" eventType="touchUpInside" id="IVC-9Y-AAz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-l9-cLI">
-                                <frame key="frameInset" minX="104" minY="337" width="166" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-l9-cLI">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="ok!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -346,12 +336,25 @@
                                     <action selector="ok:" destination="ezo-Vm-sH5" eventType="touchUpInside" id="74s-Jf-aNW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8An-jV-KU9">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
+                                <state key="normal" title="bonus!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bonus:" destination="ezo-Vm-sH5" eventType="touchUpInside" id="IVC-9Y-AAz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Pn2-l9-cLI" firstAttribute="top" secondItem="GcH-CN-Ouw" secondAttribute="bottom" constant="371" id="6nS-dJ-zEk"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="centerY" secondItem="W7G-cu-Uki" secondAttribute="centerY" multiplier="2:3" id="KkX-BY-J05"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="height" secondItem="W7G-cu-Uki" secondAttribute="height" id="Oun-Sf-zLV"/>
+                            <constraint firstItem="Pn2-l9-cLI" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="Pf2-7e-RQc"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="c1p-2d-26q"/>
+                            <constraint firstItem="8An-jV-KU9" firstAttribute="top" secondItem="Pn2-l9-cLI" secondAttribute="bottom" constant="75" id="mv9-Vx-cOy"/>
+                            <constraint firstItem="8An-jV-KU9" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="xME-YV-Oi7"/>
                         </constraints>
                     </view>
                     <connections>
@@ -376,19 +379,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-bO-NH0">
-                                <frame key="frameInset" minX="103" minY="346" width="168" height="102"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
-                                <state key="normal" title="ok!">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="ok:" destination="Bly-Fe-JqZ" eventType="touchUpInside" id="hMZ-Fq-FgX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6An-6v-NZN">
-                                <frame key="frameInset" minX="87" minY="456" width="202" height="85"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6An-6v-NZN">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="bonus!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -399,10 +391,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUo-mz-ohA">
                                 <frame key="frameInset" minX="67" minY="92" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUB-5g-bSd">
-                                <frame key="frameInset" minX="56" minY="568" width="267" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUB-5g-bSd">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="update stats">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -410,13 +400,27 @@
                                     <segue destination="52V-2r-vxB" kind="show" id="bcc-hu-bZa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-bO-NH0">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <state key="normal" title="ok!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ok:" destination="Bly-Fe-JqZ" eventType="touchUpInside" id="hMZ-Fq-FgX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AUo-mz-ohA" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="2:3" id="6EY-m3-CO5"/>
+                            <constraint firstItem="lCl-bO-NH0" firstAttribute="top" secondItem="9L0-0F-qy2" secondAttribute="bottom" constant="362" id="L4E-EQ-FZ5"/>
+                            <constraint firstItem="6An-6v-NZN" firstAttribute="top" secondItem="lCl-bO-NH0" secondAttribute="bottom" constant="35" id="Mgw-cR-DsM"/>
+                            <constraint firstItem="lCl-bO-NH0" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="Mx2-dE-njp"/>
+                            <constraint firstItem="EUB-5g-bSd" firstAttribute="top" secondItem="6An-6v-NZN" secondAttribute="bottom" constant="35" id="Pln-8H-cld"/>
                             <constraint firstItem="AUo-mz-ohA" firstAttribute="height" secondItem="xBE-Aa-U4u" secondAttribute="height" id="R1s-ZY-ZQI"/>
-                            <constraint firstItem="6An-6v-NZN" firstAttribute="top" secondItem="lCl-bO-NH0" secondAttribute="bottom" constant="33" id="Uce-Pk-dud"/>
-                            <constraint firstItem="AUo-mz-ohA" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="eUu-9B-EOq"/>
+                            <constraint firstItem="EUB-5g-bSd" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="Y6D-CZ-tVn"/>
+                            <constraint firstItem="AUo-mz-ohA" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="nVI-zi-2jP"/>
+                            <constraint firstItem="6An-6v-NZN" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="wv6-Uf-PlZ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -441,119 +445,133 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zi-Gp-uSa">
-                                <frame key="frameInset" minX="100" minY="20" width="175" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zi-Gp-uSa">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iha-NX-aHb">
-                                <frame key="frameInset" minX="135" minY="548" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iha-NX-aHb">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="ok!"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="K2b-a5-Xdk"/>
+                                    <segue destination="ezo-Vm-sH5" kind="show" id="ZJd-C9-yVq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bench" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-WY-KBa">
-                                <frame key="frameInset" minX="8" minY="112" width="113" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bench" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-WY-KBa">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krf-1z-6aA">
-                                <frame key="frameInset" minX="268" minY="131" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krf-1z-6aA">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+5 lbs">
                                     <color key="titleColor" red="0.0" green="0.7126349803664922" blue="0.010263815661732499" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="fiveButtonpressed:" destination="52V-2r-vxB" eventType="touchUpInside" id="OxU-yt-3di"/>
+                                    <action selector="fiveButtonpressed:" destination="52V-2r-vxB" eventType="touchUpInside" id="CAs-na-UbD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKe-wW-zNF">
-                                <frame key="frameInset" minX="128" minY="121" width="124" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKe-wW-zNF">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Curl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-O9-uWV">
-                                <frame key="frameInset" minX="8" minY="219" width="113" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-O9-uWV">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-aX-39T">
-                                <frame key="frameInset" minX="261" minY="229" width="105" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-aX-39T">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+2.5 lbs">
                                     <color key="titleColor" red="0.0" green="0.71263498039999995" blue="0.01026381566" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="fiveButtonpressed:" destination="52V-2r-vxB" eventType="touchUpInside" id="Ybf-wK-vvs"/>
                                     <action selector="twoPoundCurlButtonPressed:" destination="52V-2r-vxB" eventType="touchUpInside" id="Csh-xe-XyF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXE-iU-SvX">
-                                <frame key="frameInset" minX="127" minY="228" width="124" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXE-iU-SvX">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Squat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtl-q9-PyO">
-                                <frame key="frameInset" minX="13" minY="335" width="113" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Squat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtl-q9-PyO">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmH-pt-Q2L">
-                                <frame key="frameInset" minX="272" minY="354" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmH-pt-Q2L">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+5 lbs">
                                     <color key="titleColor" red="0.0" green="0.71263498039999995" blue="0.01026381566" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="fiveButtonpressed:" destination="52V-2r-vxB" eventType="touchUpInside" id="IX7-LL-4aI"/>
                                     <action selector="fivePoundSquatButtonPressed:" destination="52V-2r-vxB" eventType="touchUpInside" id="zys-ib-k0m"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-sV-z8A">
-                                <frame key="frameInset" minX="132" minY="344" width="124" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-sV-z8A">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WV-xw-UZz">
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.82409604057591623" green="0.025376805078892683" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetStats:" destination="52V-2r-vxB" eventType="touchUpInside" id="Azu-MH-yTi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="krf-1z-6aA" secondAttribute="trailing" constant="-3" id="1ai-7Z-1UZ"/>
+                            <constraint firstItem="xtl-q9-PyO" firstAttribute="centerY" secondItem="ESd-sV-z8A" secondAttribute="centerY" id="1j2-Nu-fpf"/>
+                            <constraint firstItem="ESd-sV-z8A" firstAttribute="top" secondItem="JXE-iU-SvX" secondAttribute="bottom" constant="70" id="3xa-dU-b1S"/>
+                            <constraint firstItem="5zi-Gp-uSa" firstAttribute="top" secondItem="q6C-Ud-7Bd" secondAttribute="bottom" constant="50" id="Ai1-pr-lUb"/>
+                            <constraint firstItem="JXE-iU-SvX" firstAttribute="top" secondItem="xKe-wW-zNF" secondAttribute="bottom" constant="70" id="C3X-An-r6Q"/>
+                            <constraint firstItem="5zi-Gp-uSa" firstAttribute="centerX" secondItem="vOq-sM-ZeH" secondAttribute="centerX" id="CZU-Pm-WXx"/>
+                            <constraint firstItem="Twn-O9-uWV" firstAttribute="centerX" secondItem="47B-WY-KBa" secondAttribute="centerX" id="IuB-Vx-c6H"/>
+                            <constraint firstItem="xKe-wW-zNF" firstAttribute="centerX" secondItem="vOq-sM-ZeH" secondAttribute="centerX" id="MsS-0T-qaX"/>
+                            <constraint firstItem="xtl-q9-PyO" firstAttribute="centerX" secondItem="47B-WY-KBa" secondAttribute="centerX" id="Xt7-8M-arE"/>
+                            <constraint firstItem="JXE-iU-SvX" firstAttribute="centerX" secondItem="vOq-sM-ZeH" secondAttribute="centerX" id="ZNU-JA-CPD"/>
+                            <constraint firstItem="iha-NX-aHb" firstAttribute="top" secondItem="ESd-sV-z8A" secondAttribute="bottom" constant="85" id="ZUf-ON-Btd"/>
+                            <constraint firstItem="9WV-xw-UZz" firstAttribute="top" secondItem="iha-NX-aHb" secondAttribute="bottom" constant="49" id="bdA-vq-idq"/>
+                            <constraint firstItem="ESd-sV-z8A" firstAttribute="centerX" secondItem="vOq-sM-ZeH" secondAttribute="centerX" id="cWA-R3-eEI"/>
+                            <constraint firstItem="47B-WY-KBa" firstAttribute="centerY" secondItem="xKe-wW-zNF" secondAttribute="centerY" id="cy5-bj-jCF"/>
+                            <constraint firstItem="krf-1z-6aA" firstAttribute="centerY" secondItem="xKe-wW-zNF" secondAttribute="centerY" id="hMv-Sq-MaN"/>
+                            <constraint firstItem="9WV-xw-UZz" firstAttribute="centerX" secondItem="vOq-sM-ZeH" secondAttribute="centerX" id="kQ3-tY-hw3"/>
+                            <constraint firstItem="Twn-O9-uWV" firstAttribute="centerY" secondItem="JXE-iU-SvX" secondAttribute="centerY" id="kg4-xE-WHv"/>
+                            <constraint firstItem="xKe-wW-zNF" firstAttribute="top" secondItem="5zi-Gp-uSa" secondAttribute="bottom" constant="35" id="lNy-kt-YTH"/>
+                            <constraint firstItem="iha-NX-aHb" firstAttribute="centerX" secondItem="ESd-sV-z8A" secondAttribute="centerX" id="mCS-ML-4vj"/>
+                            <constraint firstItem="mxT-aX-39T" firstAttribute="centerY" secondItem="JXE-iU-SvX" secondAttribute="centerY" id="n9u-rW-Dbs"/>
+                            <constraint firstItem="mxT-aX-39T" firstAttribute="centerX" secondItem="krf-1z-6aA" secondAttribute="centerX" id="onf-Wc-RdC"/>
+                            <constraint firstItem="XmH-pt-Q2L" firstAttribute="centerX" secondItem="krf-1z-6aA" secondAttribute="centerX" id="wFd-25-QDl"/>
+                            <constraint firstItem="47B-WY-KBa" firstAttribute="leading" secondItem="vOq-sM-ZeH" secondAttribute="leadingMargin" constant="-8" id="wte-k9-1qd"/>
+                            <constraint firstItem="XmH-pt-Q2L" firstAttribute="centerY" secondItem="ESd-sV-z8A" secondAttribute="centerY" id="zqz-Zy-4LO"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="benchLabel" destination="47B-WY-KBa" id="q5c-Zd-xfj"/>
                         <outlet property="bestBenchLabel" destination="xKe-wW-zNF" id="7wI-wd-NYp"/>
                         <outlet property="bestCurlLabel" destination="JXE-iU-SvX" id="cUk-Ha-IxH"/>
-                        <outlet property="fivePoundBenchButton" destination="krf-1z-6aA" id="KdD-IY-Z7h"/>
-                        <outlet property="fivePoundSquatButtonPressed" destination="XmH-pt-Q2L" id="SrQ-sB-OlS"/>
+                        <outlet property="bestSquatLabel" destination="ESd-sV-z8A" id="bJ7-ez-v7F"/>
+                        <outlet property="fivePoundBenchButton" destination="krf-1z-6aA" id="oj3-WH-eCi"/>
+                        <outlet property="fivePoundSquatButton" destination="XmH-pt-Q2L" id="Gxx-dj-BfY"/>
+                        <outlet property="resetButton" destination="9WV-xw-UZz" id="2o1-Pd-0TL"/>
+                        <outlet property="twoPoundCurlButton" destination="mxT-aX-39T" id="bAk-lz-Y61"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HGa-8a-XDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -597,7 +615,8 @@
         <image name="expbar" width="391" height="71"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GkZ-SG-L1e"/>
+        <segue reference="ZJd-C9-yVq"/>
+        <segue reference="0sN-5F-mTm"/>
         <segue reference="mkp-E9-Rwq"/>
     </inferredMetricsTieBreakers>
 </document>

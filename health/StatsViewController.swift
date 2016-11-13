@@ -18,6 +18,7 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var bestBenchLabel: UILabel!
     @IBOutlet weak var fivePoundBenchButton: UIButton!
     
+    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var bestCurlLabel: UILabel!
     @IBOutlet weak var bestSquatLabel: UILabel!
     @IBOutlet weak var twoPoundCurlButton: UIButton!
@@ -26,6 +27,8 @@ class StatsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bestBenchLabel.text = String(bestBench)
+        bestCurlLabel.text = String(bestCurl)
+        bestSquatLabel.text = String(bestSquat)
         
 
         // Do any additional setup after loading the view.
@@ -52,6 +55,24 @@ class StatsViewController: UIViewController {
         bestBenchLabel.text = String(bestBench)
     }
 
+    @IBAction func resetStats(_ sender: AnyObject) {
+        bestCurl = 5
+        bestBench = 45
+        bestSquat = 45
+        bestBenchLabel.text = String(bestBench)
+        bestSquatLabel.text = String(bestSquat)
+        bestCurlLabel.text = String(bestCurl)
+    }
+    
+//    @IBAction func ok(_ sender: AnyObject) {
+//        if(justLeveled){
+//            justLeveled = false
+//            performSegue(withIdentifier: "fromStatsToLevelUp", sender: nil)
+//        } else {
+//            performSegue(withIdentifier: "fromGymToHome", sender: nil)
+//        }
+//    }
+    
     /*
     // MARK: - Navigation
 
