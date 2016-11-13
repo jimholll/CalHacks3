@@ -319,9 +319,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-U9-he4">
                                 <rect key="frame" x="67" y="99" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8An-jV-KU9">
-                                <rect key="frame" x="98" y="469" width="179" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8An-jV-KU9">
+                                <rect key="frame" x="98" y="469" width="179" height="71"/>
                                 <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
                                 <state key="normal" title="bonus!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -330,9 +329,8 @@
                                     <action selector="bonus:" destination="ezo-Vm-sH5" eventType="touchUpInside" id="IVC-9Y-AAz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-l9-cLI">
-                                <rect key="frame" x="104" y="337" width="166" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-l9-cLI">
+                                <rect key="frame" x="104" y="338" width="166" height="58"/>
                                 <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
                                 <state key="normal" title="ok!">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -344,9 +342,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Pn2-l9-cLI" firstAttribute="centerY" secondItem="W7G-cu-Uki" secondAttribute="centerY" multiplier="6:5" id="AMO-n1-ws5"/>
+                            <constraint firstItem="Pn2-l9-cLI" firstAttribute="height" secondItem="8An-jV-KU9" secondAttribute="height" id="JvV-4w-wYz"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="centerY" secondItem="W7G-cu-Uki" secondAttribute="centerY" multiplier="2:3" id="KkX-BY-J05"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="height" secondItem="W7G-cu-Uki" secondAttribute="height" id="Oun-Sf-zLV"/>
+                            <constraint firstItem="8An-jV-KU9" firstAttribute="centerY" secondItem="W7G-cu-Uki" secondAttribute="centerY" multiplier="8:5" id="Y03-0E-Q0J"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="c1p-2d-26q"/>
+                            <constraint firstItem="Pn2-l9-cLI" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="enL-x8-vcU"/>
+                            <constraint firstItem="8An-jV-KU9" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="o37-FN-4fg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -394,9 +397,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUo-mz-ohA">
                                 <rect key="frame" x="67" y="92" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUB-5g-bSd">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUB-5g-bSd">
                                 <rect key="frame" x="56" y="568" width="267" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
                                 <state key="normal" title="update stats">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -408,10 +410,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6An-6v-NZN" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="2zp-Ka-eOR"/>
                             <constraint firstItem="AUo-mz-ohA" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="2:3" id="6EY-m3-CO5"/>
+                            <constraint firstItem="lCl-bO-NH0" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="QF8-TX-Gwz"/>
                             <constraint firstItem="AUo-mz-ohA" firstAttribute="height" secondItem="xBE-Aa-U4u" secondAttribute="height" id="R1s-ZY-ZQI"/>
                             <constraint firstItem="6An-6v-NZN" firstAttribute="top" secondItem="lCl-bO-NH0" secondAttribute="bottom" constant="33" id="Uce-Pk-dud"/>
                             <constraint firstItem="AUo-mz-ohA" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="eUu-9B-EOq"/>
+                            <constraint firstItem="6An-6v-NZN" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="8:5" id="fiK-b8-EnV"/>
+                            <constraint firstItem="EUB-5g-bSd" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="9:5" id="hI2-xY-nYW"/>
+                            <constraint firstItem="EUB-5g-bSd" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="pPN-T1-nfk"/>
+                            <constraint firstItem="lCl-bO-NH0" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="6:5" id="zL9-zV-iGN"/>
                         </constraints>
                     </view>
                     <connections>
@@ -529,7 +537,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K2b-a5-Xdk"/>
-        <segue reference="prG-6f-10N"/>
+        <segue reference="GkZ-SG-L1e"/>
+        <segue reference="mkp-E9-Rwq"/>
     </inferredMetricsTieBreakers>
 </document>
