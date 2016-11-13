@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         let lv = UserDefaults.standard.integer(forKey: defaultsKeys.keyLevel)
         let exp = UserDefaults.standard.integer(forKey: defaultsKeys.keyEXP)
 
-        level.text = "Lv: " + String(describing: lv)
+        level.text = "Lvl: " + String(describing: lv)
         
         //update the exp bar
         let percentEmpty = 1 - (Float(exp)/Float(25 * lv))
