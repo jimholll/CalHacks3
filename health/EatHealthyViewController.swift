@@ -65,7 +65,7 @@ class EatHealthyViewController: UIViewController {
     
     
     @IBAction func bonus(_ sender: Any) {
-        gainExp(amount: 20)
+        gainExp(amount: 5)
         ok(Any.self)
     }
 }

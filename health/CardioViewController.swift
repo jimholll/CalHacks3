@@ -47,5 +47,17 @@ class CardioViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func ok(_ sender: Any) {
+        if(justLeveled){
+            justLeveled = false
+            performSegue(withIdentifier: "fromCardioToLevelUp", sender: nil)
+        } else {
+            performSegue(withIdentifier: "fromCardioToHome", sender: nil)
+        }
+    }
+    @IBAction func bonus(_ sender: Any) {
+        gainExp(amount: 5)
+        ok(Any.self)
+    }
 
 }
