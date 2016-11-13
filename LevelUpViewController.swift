@@ -45,7 +45,7 @@ class LevelUpViewController: UIViewController {
         }
         
         levelupDude.animationImages = images
-        levelupDude.animationDuration = 2.42
+        levelupDude.animationDuration = 2.8
         levelupDude.startAnimating()
 
         // Do any additional setup after loading the view.
