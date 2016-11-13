@@ -10,8 +10,35 @@ import UIKit
 
 class EatNotUnhealthyViewController: UIViewController {
 
+    @IBOutlet weak var cakeEatingDude: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var imagesNames = ["nocake0001", "nocake0002", "nocake0003",
+                           "nocake0004",
+                           "nocake0005",
+                           "nocake0006",
+                           "nocake0007",
+                           "nocake0008",
+                           "nocake0009",
+                           "nocake0010",
+                           "nocake0011",
+                           "nocake0012",
+                           "nocake0013",
+                           "nocake0014",
+                           "nocake0015",
+                           "nocake0016",
+                           "nocake0017",
+                           "nocake0018"]
+        var images = [UIImage]()
+        
+        for i in 0..<imagesNames.count {
+            images.append(UIImage(named: imagesNames[i])!)
+        }
+        
+        cakeEatingDude.animationImages = images
+        cakeEatingDude.animationDuration = 1.5
+        cakeEatingDude.startAnimating()
 
         // Do any additional setup after loading the view.
     }
