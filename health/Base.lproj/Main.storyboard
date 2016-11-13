@@ -37,19 +37,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Lv: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp7-fF-4Yv">
-                                <frame key="frameInset" minX="16" minY="20" width="88" height="21"/>
-                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="25"/>
+                                <frame key="frameInset" minX="16" minY="20" width="88" height="30"/>
+                                <fontDescription key="fontDescription" name="ComicJensFreePro" family="Comic Jens Free Pro" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1n-2K-uki">
                                 <frame key="frameInset" minX="200" minY="20" width="142" height="21"/>
                                 <color key="backgroundColor" red="0.51518699521533984" green="1" blue="0.084081678897509615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPr-IS-55n">
                                 <frame key="frameInset" minX="242" minY="37" width="100" height="25"/>
@@ -69,15 +64,23 @@
                                     <segue destination="55k-Gy-vOL" kind="show" id="bum-nB-v0i"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="expbar" translatesAutoresizingMaskIntoConstraints="NO" id="psu-86-7MP">
+                                <frame key="frameInset" minX="196" minY="49" width="151" height="51"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="psu-86-7MP" firstAttribute="centerX" secondItem="g1n-2K-uki" secondAttribute="centerX" id="360-YW-gxJ"/>
+                            <constraint firstItem="psu-86-7MP" firstAttribute="width" secondItem="g1n-2K-uki" secondAttribute="width" multiplier="1.1" id="6Ln-Xe-8Qr"/>
                             <constraint firstItem="iXe-dO-vMZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mdd-yt-PwY"/>
                             <constraint firstItem="iXe-dO-vMZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="P7N-KT-Fv0"/>
+                            <constraint firstItem="psu-86-7MP" firstAttribute="height" secondItem="g1n-2K-uki" secondAttribute="height" multiplier="1.1" id="QNZ-b1-lNK"/>
                             <constraint firstItem="g1n-2K-uki" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:30" id="d8a-Cn-HDo"/>
                             <constraint firstItem="kp7-fF-4Yv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="h3v-6x-pBk"/>
                             <constraint firstItem="vPr-IS-55n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="hNe-gj-Lh5"/>
+                            <constraint firstItem="vPr-IS-55n" firstAttribute="height" secondItem="g1n-2K-uki" secondAttribute="height" id="kt3-Ej-GAv"/>
                             <constraint firstItem="iXe-dO-vMZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="8:12" id="lSp-OZ-fbc"/>
+                            <constraint firstItem="psu-86-7MP" firstAttribute="centerY" secondItem="g1n-2K-uki" secondAttribute="centerY" id="m08-IN-ImF"/>
                             <constraint firstItem="g1n-2K-uki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="13:8" id="ml7-pT-jbC"/>
                             <constraint firstItem="g1n-2K-uki" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="sgA-kx-C77"/>
                             <constraint firstItem="g1n-2K-uki" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:8" id="tYn-zp-k0Q"/>
@@ -92,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="419.64017991004499"/>
+            <point key="canvasLocation" x="36" y="415.14242878560725"/>
         </scene>
         <!--Eat View Controller-->
         <scene sceneID="Mx8-hy-N16">
@@ -523,8 +526,11 @@
             <point key="canvasLocation" x="3354" y="764"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="expbar" width="391" height="71"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K2b-a5-Xdk"/>
         <segue reference="prG-6f-10N"/>
+        <segue reference="jr1-wR-TAX"/>
     </inferredMetricsTieBreakers>
 </document>

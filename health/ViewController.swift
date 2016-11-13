@@ -32,9 +32,9 @@ class ViewController: UIViewController {
         
         //update the exp bar
         let percentEmpty = 1 - (Float(exp)/Float(25 * lv))
-        NSLayoutConstraint(item: whiteBar, attribute: .width, relatedBy: .equal, toItem: greenBar, attribute:.width, multiplier: CGFloat(percentEmpty), constant:-6.0).isActive = true
-        NSLayoutConstraint(item: whiteBar, attribute: .height, relatedBy: .equal, toItem: greenBar, attribute:.height, multiplier: 1.0, constant:-6.0).isActive = true
-        NSLayoutConstraint(item: whiteBar, attribute: .trailing, relatedBy: .equal, toItem: greenBar, attribute:.trailing, multiplier: 1.0, constant:-3.0).isActive = true
+        NSLayoutConstraint(item: whiteBar, attribute: .width, relatedBy: .equal, toItem: greenBar, attribute:.width, multiplier: CGFloat(percentEmpty), constant:0.0).isActive = true
+       // NSLayoutConstraint(item: whiteBar, attribute: .height, relatedBy: .equal, toItem: greenBar, attribute:.height, multiplier: 1.0, constant:-6.0).isActive = true
+        NSLayoutConstraint(item: whiteBar, attribute: .trailing, relatedBy: .equal, toItem: greenBar, attribute:.trailing, multiplier: 1.0, constant:0.0).isActive = true
         
         
         homeScreenDude.animationImages = findImages(level: lv)
