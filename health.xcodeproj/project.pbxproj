@@ -64,6 +64,7 @@
 		140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelUpViewController.swift; path = ../LevelUpViewController.swift; sourceTree = "<group>"; };
 		140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatHealthyViewController.swift; sourceTree = "<group>"; };
 		140DD9051DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatNotUnhealthyViewController.swift; sourceTree = "<group>"; };
+		388981351DD8987400B7E820 /* kidkosmic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kidkosmic.ttf; sourceTree = "<group>"; };
 		38F6F0601DD86518007C1443 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		38F6F0641DD86E27007C1443 /* myfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = myfont.ttf; sourceTree = "<group>"; };
 		38F6F0661DD87163007C1443 /* ComicJensFreePro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicJensFreePro-Regular.ttf"; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 				140DD8CB1DD70D6A00A5AB2E /* ViewController.swift */,
 				140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */,
 				38F6F0641DD86E27007C1443 /* myfont.ttf */,
+				388981351DD8987400B7E820 /* kidkosmic.ttf */,
 				38F6F0661DD87163007C1443 /* ComicJensFreePro-Regular.ttf */,
 				140DD8CD1DD70D6A00A5AB2E /* Main.storyboard */,
 				38F6F0601DD86518007C1443 /* StatsViewController.swift */,
