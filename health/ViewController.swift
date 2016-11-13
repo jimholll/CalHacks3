@@ -59,18 +59,8 @@ struct defaultsKeys {
 
 func findImages(level: Int) -> Array<UIImage>{
     var imageNames = [String]()
-    print(level/5)
-    switch level/5{
-    case 1:
-        imageNames = ["bicepcurl0001", "bicepcurl0002", "bicepcurl0003",
-                      "bicepcurl0004",
-                      "bicepcurl0005",
-                      "bicepcurl0006",
-                      "bicepcurl0007",
-                      "bicepcurl0008",
-                      "bicepcurl0009"]
-        break
-    default: // levels 1-4
+    
+    if (level < 3){
         imageNames = ["chillin0001", "chillin0002", "chillin0003",
                       "chillin0004",
                       "chillin0005",
@@ -80,8 +70,15 @@ func findImages(level: Int) -> Array<UIImage>{
                       "chillin0010",
                       "chillin0011",
                       "chillin0012"]
+    } else if (level < 5){
         
+    } else if (level < 7){
         
+    } else if (level < 10){
+        
+    } else if (level < 15){
+        
+    } else {
         
     }
     

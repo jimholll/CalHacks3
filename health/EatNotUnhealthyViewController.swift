@@ -1,5 +1,5 @@
 //
-//  EatViewController.swift
+//  EatNotUnhealthyViewController.swift
 //  health
 //
 //  Created by Sean Chen on 11/12/16.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class EatViewController: UIViewController {
+class EatNotUnhealthyViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
 
         // Do any additional setup after loading the view.
     }
@@ -32,16 +31,17 @@ class EatViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func ok(_ sender: Any) {
+        if(justLeveled){
+            justLeveled = false
+            performSegue(withIdentifier: "fromEatNotUnhealthyToLevelUp", sender: nil)
+        } else {
+            performSegue(withIdentifier: "fromEatNotHealthyToHome", sender: nil)
+        }
+    }
 
-    @IBAction func eatHealthy(_ sender: Any) {
-        gainExp(amount: 10)
-        performSegue(withIdentifier: "fromEatToEatHealthy", sender: nil)
-    }
-    
-    @IBAction func notUnhealthy(_ sender: Any) {
+    @IBAction func bonus(_ sender: Any) {
         gainExp(amount: 5)
-        performSegue(withIdentifier: "fromEatToEatNotUnhealthy", sender: nil)
-        
+        ok(Any.self)
     }
-    
 }

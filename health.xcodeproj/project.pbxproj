@@ -20,6 +20,7 @@
 		140DD9001DD76A1700A5AB2E /* CardioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD8FF1DD76A1700A5AB2E /* CardioViewController.swift */; };
 		140DD9021DD7EDC300A5AB2E /* LevelUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */; };
 		140DD9041DD7F3CD00A5AB2E /* EatHealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */; };
+		140DD9061DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9051DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		140DD8FF1DD76A1700A5AB2E /* CardioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardioViewController.swift; sourceTree = "<group>"; };
 		140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelUpViewController.swift; path = ../LevelUpViewController.swift; sourceTree = "<group>"; };
 		140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatHealthyViewController.swift; sourceTree = "<group>"; };
+		140DD9051DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatNotUnhealthyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				140DD8FB1DD7266900A5AB2E /* GymViewController.swift */,
 				140DD8FD1DD7330C00A5AB2E /* EatViewController.swift */,
 				140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */,
+				140DD9051DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift */,
 			);
 			path = health;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				140DD9001DD76A1700A5AB2E /* CardioViewController.swift in Sources */,
 				140DD8CA1DD70D6A00A5AB2E /* AppDelegate.swift in Sources */,
 				140DD9021DD7EDC300A5AB2E /* LevelUpViewController.swift in Sources */,
+				140DD9061DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
