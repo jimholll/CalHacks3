@@ -10,8 +10,7 @@ import UIKit
 
 class GymViewController: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
-    
+    @IBOutlet weak var liftingDude: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +28,9 @@ class GymViewController: UIViewController {
             images.append(UIImage(named: imagesNames[i])!)
         }
         
-        imageView.animationImages = images
-        imageView.animationDuration = 0.75
-        imageView.startAnimating()
+        liftingDude.animationImages = images
+        liftingDude.animationDuration = 0.75
+        liftingDude.startAnimating()
 
         // Do any additional setup after loading the view.
     }

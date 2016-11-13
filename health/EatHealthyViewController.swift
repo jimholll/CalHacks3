@@ -10,8 +10,30 @@ import UIKit
 
 class EatHealthyViewController: UIViewController {
 
+    @IBOutlet weak var healthyEater: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var imagesNames = ["applemunching0001", "applemunching0002", "applemunching0003",
+                           "applemunching0004",
+                           "applemunching0005",
+                           "applemunching0006",
+                           "applemunching0007",
+                           "applemunching0008",
+                           "applemunching0009",
+                           "applemunching0010",
+                           "applemunching0011",
+                           "applemunching0012",
+                           "applemunching0013"]
+        var images = [UIImage]()
+        
+        for i in 0..<imagesNames.count {
+            images.append(UIImage(named: imagesNames[i])!)
+        }
+        
+        healthyEater.animationImages = images
+        healthyEater.animationDuration = 1.1
+        healthyEater.startAnimating()
 
         // Do any additional setup after loading the view.
     }

@@ -10,8 +10,24 @@ import UIKit
 
 class CardioViewController: UIViewController {
 
+    @IBOutlet weak var runningDude: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var imagesNames = ["running0001", "running0002", "running0003",
+                           "running0004",
+                           "running0005",
+                           "running0006",
+                           "running0007"]
+        var images = [UIImage]()
+        
+        for i in 0..<imagesNames.count {
+            images.append(UIImage(named: imagesNames[i])!)
+        }
+        
+        runningDude.animationImages = images
+        runningDude.animationDuration = 0.5
+        runningDude.startAnimating()
 
         // Do any additional setup after loading the view.
     }
