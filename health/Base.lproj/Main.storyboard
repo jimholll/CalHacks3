@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lv: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp7-fF-4Yv">
-                                <rect key="frame" x="16" y="50" width="90.5" height="29"/>
+                                <rect key="frame" x="16" y="50" width="91" height="29"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -118,13 +118,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is you. " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH2-Cd-mbX">
-                                <rect key="frame" x="95" y="55" width="185.5" height="23.5"/>
+                                <rect key="frame" x="95" y="55" width="186" height="24"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4v-HJ-8Aa">
-                                <rect key="frame" x="23" y="93" width="329" height="93"/>
+                                <rect key="frame" x="23" y="94" width="329" height="93"/>
                                 <string key="text">Every time 
 you do something
  healthy, log it in the app. </string>
@@ -133,7 +133,7 @@ you do something
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gain experience for good behavior, and your character's life will improve with yours!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp3-ZF-fLd">
-                                <rect key="frame" x="23" y="202" width="329" height="116"/>
+                                <rect key="frame" x="23" y="203" width="329" height="116"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -188,21 +188,14 @@ you do something
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-qW-IoU">
-                                <rect key="frame" x="114" y="341" width="146" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugr-1e-lXu">
-                                <rect key="frame" x="114" y="460" width="146" height="30"/>
+                                <rect key="frame" x="114" y="482" width="146" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-4p-cXD">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-4p-cXD">
                                 <rect key="frame" x="114" y="572" width="146" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="finish"/>
                                 <connections>
@@ -221,18 +214,29 @@ you do something
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-qW-IoU">
+                                <rect key="frame" x="114" y="372" width="146" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ic9-WF-idB" firstAttribute="top" secondItem="TSG-aP-Wlq" secondAttribute="bottom" constant="58" id="4O7-eV-JlH"/>
+                            <constraint firstItem="hEd-4p-cXD" firstAttribute="centerY" secondItem="soA-sA-IrG" secondAttribute="centerY" multiplier="21:12" id="1g1-yd-Vty"/>
                             <constraint firstItem="uHV-qW-IoU" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="9Rr-mF-QUk"/>
                             <constraint firstItem="ic9-WF-idB" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="BGF-GC-O26"/>
                             <constraint firstItem="Ugr-1e-lXu" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="G3H-a1-b70"/>
-                            <constraint firstItem="uHV-qW-IoU" firstAttribute="top" secondItem="ic9-WF-idB" secondAttribute="bottom" constant="49" id="NX8-xv-HOU"/>
+                            <constraint firstItem="uHV-qW-IoU" firstAttribute="centerY" secondItem="soA-sA-IrG" secondAttribute="centerY" multiplier="18:16" id="ICy-14-hj6"/>
+                            <constraint firstItem="Ugr-1e-lXu" firstAttribute="centerY" secondItem="soA-sA-IrG" secondAttribute="centerY" multiplier="9:6" id="IuZ-Z4-DPs"/>
+                            <constraint firstItem="ic9-WF-idB" firstAttribute="centerY" secondItem="soA-sA-IrG" secondAttribute="centerY" multiplier="7:9" id="LbM-lF-zCx"/>
                             <constraint firstItem="TSG-aP-Wlq" firstAttribute="width" secondItem="soA-sA-IrG" secondAttribute="width" id="Nmo-9x-iWg"/>
+                            <constraint firstItem="TSG-aP-Wlq" firstAttribute="centerY" secondItem="soA-sA-IrG" secondAttribute="centerY" multiplier="1:3" id="RDF-7X-iHN"/>
+                            <constraint firstItem="uHV-qW-IoU" firstAttribute="width" secondItem="soA-sA-IrG" secondAttribute="width" multiplier="1:3" id="bzQ-fz-WTg"/>
                             <constraint firstItem="TSG-aP-Wlq" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="e05-i2-8QT"/>
-                            <constraint firstItem="Ugr-1e-lXu" firstAttribute="top" secondItem="uHV-qW-IoU" secondAttribute="bottom" constant="89" id="h57-jB-Exf"/>
-                            <constraint firstItem="TSG-aP-Wlq" firstAttribute="top" secondItem="frm-eY-zE7" secondAttribute="bottom" constant="35" id="zSP-ML-7Vj"/>
+                            <constraint firstItem="hEd-4p-cXD" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="hLL-dg-Wwb"/>
+                            <constraint firstItem="Ugr-1e-lXu" firstAttribute="width" secondItem="soA-sA-IrG" secondAttribute="width" multiplier="1:3" id="koM-6I-ilL"/>
+                            <constraint firstItem="ic9-WF-idB" firstAttribute="width" secondItem="soA-sA-IrG" secondAttribute="width" multiplier="1:3" id="o0g-O4-6AZ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -607,14 +611,14 @@ you do something
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zi-Gp-uSa">
-                                <rect key="frame" x="150" y="70" width="75.5" height="23.5"/>
+                                <rect key="frame" x="167.5" y="70" width="41" height="23.5"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iha-NX-aHb">
-                                <rect key="frame" x="137.5" y="424" width="100" height="59"/>
+                                <rect key="frame" x="160" y="424" width="55" height="59"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="ok!"/>
@@ -623,14 +627,14 @@ you do something
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bench" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-WY-KBa">
-                                <rect key="frame" x="8" y="128.5" width="94.5" height="23.5"/>
+                                <rect key="frame" x="8" y="128.5" width="57.5" height="23.5"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krf-1z-6aA">
-                                <rect key="frame" x="262" y="122.5" width="100" height="36"/>
+                                <rect key="frame" x="307" y="122.5" width="55" height="36"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+5 lbs">
@@ -641,21 +645,21 @@ you do something
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKe-wW-zNF">
-                                <rect key="frame" x="130" y="128.5" width="116" height="23.5"/>
+                                <rect key="frame" x="153" y="128.5" width="70.5" height="23.5"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-O9-uWV">
-                                <rect key="frame" x="17.5" y="222" width="76" height="23.5"/>
+                                <rect key="frame" x="18.5" y="222" width="37" height="23.5"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-aX-39T">
-                                <rect key="frame" x="250" y="216" width="124" height="36"/>
+                                <rect key="frame" x="298.5" y="216" width="72" height="36"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+2.5 lbs">
@@ -666,21 +670,21 @@ you do something
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXE-iU-SvX">
-                                <rect key="frame" x="130" y="222" width="116" height="23.5"/>
+                                <rect key="frame" x="153" y="222" width="70.5" height="23.5"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Squat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtl-q9-PyO">
-                                <rect key="frame" x="7.5" y="315.5" width="96" height="23.5"/>
+                                <rect key="frame" x="10.5" y="315.5" width="53" height="23.5"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmH-pt-Q2L">
-                                <rect key="frame" x="262" y="309.5" width="100" height="36"/>
+                                <rect key="frame" x="307" y="309.5" width="55" height="36"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+5 lbs">
@@ -691,14 +695,14 @@ you do something
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-sV-z8A">
-                                <rect key="frame" x="130" y="315.5" width="116" height="23.5"/>
+                                <rect key="frame" x="153" y="315.5" width="70.5" height="23.5"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WV-xw-UZz">
-                                <rect key="frame" x="140" y="532" width="95" height="36"/>
+                                <rect key="frame" x="161.5" y="532" width="52" height="36"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.82409604057591623" green="0.025376805078892683" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
