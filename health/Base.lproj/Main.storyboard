@@ -116,20 +116,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-gQ-X4f">
-                                <rect key="frame" x="28" y="142" width="319" height="82"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="U0O-0H-XXg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
-                                <state key="normal" title="I ate healthily">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="eatHealthy:" destination="55k-Gy-vOL" eventType="touchUpInside" id="2SN-Dd-Prr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-r5-YHC">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-r5-YHC">
                                 <rect key="frame" x="30" y="366" width="315" height="122"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="yhb-Nh-JN5"/>
@@ -142,15 +129,27 @@
                                     <action selector="notUnhealthy:" destination="55k-Gy-vOL" eventType="touchUpInside" id="JU9-Po-MAs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-gQ-X4f">
+                                <rect key="frame" x="26" y="98" width="319" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="U0O-0H-XXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <state key="normal" title="I ate healthily">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="eatHealthy:" destination="55k-Gy-vOL" eventType="touchUpInside" id="2SN-Dd-Prr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4Gc-r5-YHC" firstAttribute="leading" secondItem="k3u-dP-Wak" secondAttribute="leadingMargin" constant="14" id="42A-ZW-2RB"/>
+                            <constraint firstItem="eRE-gQ-X4f" firstAttribute="centerY" secondItem="k3u-dP-Wak" secondAttribute="centerY" multiplier="2:3" id="A0I-kU-ADT"/>
+                            <constraint firstItem="4Gc-r5-YHC" firstAttribute="width" secondItem="k3u-dP-Wak" secondAttribute="width" id="Hxc-7o-BVs"/>
+                            <constraint firstItem="4Gc-r5-YHC" firstAttribute="centerY" secondItem="k3u-dP-Wak" secondAttribute="centerY" multiplier="4:3" id="Ntd-hc-cLR"/>
                             <constraint firstItem="4Gc-r5-YHC" firstAttribute="centerX" secondItem="k3u-dP-Wak" secondAttribute="centerX" id="Xdm-l2-eeO"/>
                             <constraint firstItem="eRE-gQ-X4f" firstAttribute="centerX" secondItem="k3u-dP-Wak" secondAttribute="centerX" id="cqr-NU-lqR"/>
-                            <constraint firstItem="eRE-gQ-X4f" firstAttribute="top" secondItem="S5e-zJ-szX" secondAttribute="bottom" constant="122" id="hQo-QX-pzU"/>
-                            <constraint firstItem="eRE-gQ-X4f" firstAttribute="centerX" secondItem="k3u-dP-Wak" secondAttribute="centerX" id="lHB-rW-q6w"/>
-                            <constraint firstItem="F6W-ps-YSh" firstAttribute="top" secondItem="4Gc-r5-YHC" secondAttribute="bottom" constant="179" id="lcd-hU-k1R"/>
                         </constraints>
                     </view>
                     <connections>
@@ -178,7 +177,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L6K-7l-dNc">
                                 <rect key="frame" x="67" y="87" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meC-ds-KGP">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meC-ds-KGP">
                                 <rect key="frame" x="137.5" y="391" width="100" height="59"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="ok!">
@@ -188,7 +187,7 @@
                                     <action selector="ok:" destination="aFE-EI-SVA" eventType="touchUpInside" id="23E-Re-FYp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpF-6p-hHR">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpF-6p-hHR">
                                 <rect key="frame" x="81" y="525" width="213" height="59"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="bonus!">
@@ -201,11 +200,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fpF-6p-hHR" firstAttribute="top" secondItem="meC-ds-KGP" secondAttribute="bottom" constant="75" id="EoE-qI-ZsM"/>
-                            <constraint firstItem="meC-ds-KGP" firstAttribute="top" secondItem="h1m-Mz-iUK" secondAttribute="bottom" constant="371" id="GlF-Jq-sKi"/>
+                            <constraint firstItem="meC-ds-KGP" firstAttribute="centerY" secondItem="Sw8-Be-qcG" secondAttribute="centerY" multiplier="15:12" id="IkU-do-kt6"/>
                             <constraint firstItem="L6K-7l-dNc" firstAttribute="centerX" secondItem="Sw8-Be-qcG" secondAttribute="centerX" id="M7o-o1-62f"/>
                             <constraint firstItem="fpF-6p-hHR" firstAttribute="centerX" secondItem="Sw8-Be-qcG" secondAttribute="centerX" id="Mjr-2p-VF7"/>
                             <constraint firstItem="meC-ds-KGP" firstAttribute="centerX" secondItem="Sw8-Be-qcG" secondAttribute="centerX" id="Rci-3O-yXW"/>
+                            <constraint firstItem="fpF-6p-hHR" firstAttribute="centerY" secondItem="Sw8-Be-qcG" secondAttribute="centerY" multiplier="19:12" id="g9g-K4-FlO"/>
                             <constraint firstItem="L6K-7l-dNc" firstAttribute="height" secondItem="Sw8-Be-qcG" secondAttribute="height" id="iPd-sH-hgK"/>
                             <constraint firstItem="L6K-7l-dNc" firstAttribute="centerY" secondItem="Sw8-Be-qcG" secondAttribute="centerY" multiplier="2:3" id="m7N-rG-RSf"/>
                         </constraints>
@@ -235,7 +234,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-qI-QCE">
                                 <rect key="frame" x="67" y="73" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXC-Ro-wMb">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXC-Ro-wMb">
                                 <rect key="frame" x="81" y="525" width="213" height="59"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="bonus!">
@@ -245,7 +244,7 @@
                                     <action selector="bonus:" destination="MVX-Fe-WJ9" eventType="touchUpInside" id="kpv-Lg-Cc5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDA-QT-T6x">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDA-QT-T6x">
                                 <rect key="frame" x="137.5" y="391" width="100" height="59"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="ok!">
@@ -258,13 +257,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jDA-QT-T6x" firstAttribute="centerY" secondItem="0ug-R5-2bh" secondAttribute="centerY" multiplier="15:12" id="2u5-eO-rjD"/>
                             <constraint firstItem="6wU-qI-QCE" firstAttribute="centerX" secondItem="0ug-R5-2bh" secondAttribute="centerX" multiplier="2:3" id="B4L-jQ-XNV"/>
-                            <constraint firstItem="jDA-QT-T6x" firstAttribute="top" secondItem="1NT-Do-aat" secondAttribute="bottom" constant="371" id="LY2-UK-z9P"/>
                             <constraint firstItem="6wU-qI-QCE" firstAttribute="height" secondItem="0ug-R5-2bh" secondAttribute="height" id="MIh-ZF-DhA"/>
+                            <constraint firstItem="NXC-Ro-wMb" firstAttribute="centerY" secondItem="0ug-R5-2bh" secondAttribute="centerY" multiplier="19:12" id="VDD-WX-NH1"/>
                             <constraint firstItem="6wU-qI-QCE" firstAttribute="centerY" secondItem="0ug-R5-2bh" secondAttribute="centerY" multiplier="2:3" id="fe5-jV-sAh"/>
                             <constraint firstItem="jDA-QT-T6x" firstAttribute="centerX" secondItem="0ug-R5-2bh" secondAttribute="centerX" id="hwU-nQ-zbl"/>
                             <constraint firstItem="NXC-Ro-wMb" firstAttribute="centerX" secondItem="0ug-R5-2bh" secondAttribute="centerX" id="imi-3c-2db"/>
-                            <constraint firstItem="NXC-Ro-wMb" firstAttribute="top" secondItem="jDA-QT-T6x" secondAttribute="bottom" constant="75" id="vFM-jM-WZ9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -312,9 +311,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vid-e7-WtP" firstAttribute="centerX" secondItem="lVX-bb-cUn" secondAttribute="centerX" id="Fws-DX-Fm9"/>
-                            <constraint firstItem="Vid-e7-WtP" firstAttribute="top" secondItem="cO5-sg-vaa" secondAttribute="bottom" constant="118" id="GlH-0r-FvZ"/>
-                            <constraint firstItem="cO5-sg-vaa" firstAttribute="top" secondItem="ViG-y2-swN" secondAttribute="bottom" constant="174" id="cMh-hn-9Tu"/>
+                            <constraint firstItem="cO5-sg-vaa" firstAttribute="centerY" secondItem="lVX-bb-cUn" secondAttribute="centerY" multiplier="2:3" id="OeX-BB-O6O"/>
+                            <constraint firstItem="Vid-e7-WtP" firstAttribute="centerY" secondItem="lVX-bb-cUn" secondAttribute="centerY" multiplier="4:3" id="nvU-rO-0sA"/>
+                            <constraint firstItem="Vid-e7-WtP" firstAttribute="centerX" secondItem="lVX-bb-cUn" secondAttribute="centerX" id="o1F-1c-sEy"/>
                             <constraint firstItem="cO5-sg-vaa" firstAttribute="centerX" secondItem="lVX-bb-cUn" secondAttribute="centerX" id="uJr-ev-aMa"/>
                         </constraints>
                     </view>
@@ -342,7 +341,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-U9-he4">
                                 <rect key="frame" x="67" y="99" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-l9-cLI">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-l9-cLI">
                                 <rect key="frame" x="137.5" y="391" width="100" height="59"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="ok!">
@@ -352,7 +351,7 @@
                                     <action selector="ok:" destination="ezo-Vm-sH5" eventType="touchUpInside" id="74s-Jf-aNW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8An-jV-KU9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8An-jV-KU9">
                                 <rect key="frame" x="81" y="525" width="213" height="59"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="40"/>
                                 <state key="normal" title="bonus!">
@@ -365,12 +364,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pn2-l9-cLI" firstAttribute="top" secondItem="GcH-CN-Ouw" secondAttribute="bottom" constant="371" id="6nS-dJ-zEk"/>
+                            <constraint firstItem="Pn2-l9-cLI" firstAttribute="centerY" secondItem="W7G-cu-Uki" secondAttribute="centerY" multiplier="15:12" id="9UD-PN-fr0"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="centerY" secondItem="W7G-cu-Uki" secondAttribute="centerY" multiplier="2:3" id="KkX-BY-J05"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="height" secondItem="W7G-cu-Uki" secondAttribute="height" id="Oun-Sf-zLV"/>
                             <constraint firstItem="Pn2-l9-cLI" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="Pf2-7e-RQc"/>
+                            <constraint firstItem="8An-jV-KU9" firstAttribute="centerY" secondItem="W7G-cu-Uki" secondAttribute="centerY" multiplier="19:12" id="aR4-KP-BVB"/>
                             <constraint firstItem="Ttm-U9-he4" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="c1p-2d-26q"/>
-                            <constraint firstItem="8An-jV-KU9" firstAttribute="top" secondItem="Pn2-l9-cLI" secondAttribute="bottom" constant="75" id="mv9-Vx-cOy"/>
                             <constraint firstItem="8An-jV-KU9" firstAttribute="centerX" secondItem="W7G-cu-Uki" secondAttribute="centerX" id="xME-YV-Oi7"/>
                         </constraints>
                     </view>
@@ -396,7 +395,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6An-6v-NZN">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6An-6v-NZN">
                                 <rect key="frame" x="121" y="458" width="133" height="41"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="bonus!">
@@ -409,7 +408,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUo-mz-ohA">
                                 <rect key="frame" x="67" y="92" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUB-5g-bSd">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUB-5g-bSd">
                                 <rect key="frame" x="51.5" y="534" width="272" height="41"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="update stats">
@@ -419,7 +418,7 @@
                                     <segue destination="52V-2r-vxB" kind="show" id="bcc-hu-bZa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-bO-NH0">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-bO-NH0">
                                 <rect key="frame" x="156" y="382" width="63" height="41"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="ok!">
@@ -432,13 +431,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="EUB-5g-bSd" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="41:24" id="1Bu-LW-CCX"/>
                             <constraint firstItem="AUo-mz-ohA" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="2:3" id="6EY-m3-CO5"/>
-                            <constraint firstItem="lCl-bO-NH0" firstAttribute="top" secondItem="9L0-0F-qy2" secondAttribute="bottom" constant="362" id="L4E-EQ-FZ5"/>
-                            <constraint firstItem="6An-6v-NZN" firstAttribute="top" secondItem="lCl-bO-NH0" secondAttribute="bottom" constant="35" id="Mgw-cR-DsM"/>
                             <constraint firstItem="lCl-bO-NH0" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="Mx2-dE-njp"/>
-                            <constraint firstItem="EUB-5g-bSd" firstAttribute="top" secondItem="6An-6v-NZN" secondAttribute="bottom" constant="35" id="Pln-8H-cld"/>
+                            <constraint firstItem="lCl-bO-NH0" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="55:48" id="PBa-Tm-aGK"/>
                             <constraint firstItem="AUo-mz-ohA" firstAttribute="height" secondItem="xBE-Aa-U4u" secondAttribute="height" id="R1s-ZY-ZQI"/>
                             <constraint firstItem="EUB-5g-bSd" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="Y6D-CZ-tVn"/>
+                            <constraint firstItem="6An-6v-NZN" firstAttribute="centerY" secondItem="xBE-Aa-U4u" secondAttribute="centerY" multiplier="34:24" id="foK-vg-e6r"/>
                             <constraint firstItem="AUo-mz-ohA" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="nVI-zi-2jP"/>
                             <constraint firstItem="6An-6v-NZN" firstAttribute="centerX" secondItem="xBE-Aa-U4u" secondAttribute="centerX" id="wv6-Uf-PlZ"/>
                         </constraints>
@@ -647,7 +646,7 @@
         <image name="expbar" width="391" height="71"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0sN-5F-mTm"/>
+        <segue reference="GkZ-SG-L1e"/>
         <segue reference="QOG-ql-rkY"/>
         <segue reference="mkp-E9-Rwq"/>
     </inferredMetricsTieBreakers>
