@@ -316,9 +316,20 @@
                     <view key="view" contentMode="scaleToFill" id="WWF-Jm-prR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVp-vJ-5A0">
+                                <frame key="frameInset" minX="67" minY="232" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iVp-vJ-5A0" firstAttribute="height" secondItem="WWF-Jm-prR" secondAttribute="height" id="48I-oa-bao"/>
+                            <constraint firstItem="iVp-vJ-5A0" firstAttribute="centerX" secondItem="WWF-Jm-prR" secondAttribute="centerX" id="DW0-ku-ahQ"/>
+                            <constraint firstItem="iVp-vJ-5A0" firstAttribute="centerY" secondItem="WWF-Jm-prR" secondAttribute="centerY" id="whi-e6-vZ0"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="levelupDude" destination="iVp-vJ-5A0" id="IdF-SD-sRb"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="fromLevelUpToHome" id="eRo-sK-i4G"/>
                     </connections>
                 </viewController>
@@ -328,7 +339,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jr1-wR-TAX"/>
-        <segue reference="f4u-KH-6fu"/>
+        <segue reference="eRo-sK-i4G"/>
+        <segue reference="mkp-E9-Rwq"/>
     </inferredMetricsTieBreakers>
 </document>
