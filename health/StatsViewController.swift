@@ -14,7 +14,11 @@ var bestSquat: Int = 45
 
 
 class StatsViewController: UIViewController {
-    @IBOutlet weak var benchLabel: UILabel!
+    
+    @IBOutlet weak var labelEx1: UILabel!
+    @IBOutlet weak var labelEx2: UILabel!
+    @IBOutlet weak var labelEx3: UILabel!
+    
     @IBOutlet weak var bestBenchLabel: UILabel!
     @IBOutlet weak var fivePoundBenchButton: UIButton!
     
@@ -26,6 +30,12 @@ class StatsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        labelEx1.text = UserDefaults.standard.string(forKey: defaultsKeys.keyEx1)
+        labelEx2.text = UserDefaults.standard.string(forKey: defaultsKeys.keyEx2)
+        labelEx3.text = UserDefaults.standard.string(forKey: defaultsKeys.keyEx3)
+        
+        
         bestBenchLabel.text = String(bestBench)
         bestCurlLabel.text = String(bestCurl)
         bestSquatLabel.text = String(bestSquat)
