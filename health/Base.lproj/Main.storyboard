@@ -118,13 +118,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is you. " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH2-Cd-mbX">
-                                <rect key="frame" x="95" y="20" width="185.5" height="23.5"/>
+                                <rect key="frame" x="95" y="55" width="185.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4v-HJ-8Aa">
-                                <rect key="frame" x="23" y="58" width="329" height="93"/>
+                                <rect key="frame" x="23" y="93" width="329" height="93"/>
                                 <string key="text">Every time 
 you do something
  healthy, log it in the app. </string>
@@ -133,7 +133,7 @@ you do something
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gain experience for good behavior, and your character's life will improve with yours!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp3-ZF-fLd">
-                                <rect key="frame" x="23" y="167" width="329" height="116"/>
+                                <rect key="frame" x="23" y="202" width="329" height="116"/>
                                 <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -152,8 +152,8 @@ you do something
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rXi-Bk-Cnp" firstAttribute="centerY" secondItem="Wrb-RT-XQX" secondAttribute="centerY" multiplier="3:2" id="HnN-oM-MJo"/>
-                            <constraint firstItem="vH2-Cd-mbX" firstAttribute="top" secondItem="Sg2-6S-sTd" secondAttribute="bottom" id="Jne-TR-Y5o"/>
+                            <constraint firstItem="rXi-Bk-Cnp" firstAttribute="centerY" secondItem="Wrb-RT-XQX" secondAttribute="centerY" multiplier="9:7" id="HnN-oM-MJo"/>
+                            <constraint firstItem="vH2-Cd-mbX" firstAttribute="top" secondItem="Sg2-6S-sTd" secondAttribute="bottom" constant="35" id="Jne-TR-Y5o"/>
                             <constraint firstItem="hp3-ZF-fLd" firstAttribute="top" secondItem="c4v-HJ-8Aa" secondAttribute="bottom" constant="16" id="KBc-T3-qCA"/>
                             <constraint firstItem="hp3-ZF-fLd" firstAttribute="width" secondItem="Wrb-RT-XQX" secondAttribute="width" constant="-46" id="Yc3-Uf-GRS"/>
                             <constraint firstItem="vH2-Cd-mbX" firstAttribute="centerX" secondItem="Wrb-RT-XQX" secondAttribute="centerX" id="cNC-ph-Oc5"/>
@@ -188,37 +188,52 @@ you do something
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ic9-WF-idB">
-                                <rect key="frame" x="228" y="147" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-qW-IoU">
+                                <rect key="frame" x="114" y="341" width="146" height="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-qW-IoU">
-                                <rect key="frame" x="209" y="318" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugr-1e-lXu">
+                                <rect key="frame" x="114" y="460" width="146" height="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugr-1e-lXu">
-                                <rect key="frame" x="209" y="516" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-4p-cXD">
-                                <rect key="frame" x="284" y="592" width="37" height="30"/>
+                                <rect key="frame" x="114" y="572" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
                                 <state key="normal" title="finish"/>
                                 <connections>
                                     <action selector="finish:" destination="Bgg-6E-dGY" eventType="touchUpInside" id="RTP-ww-fdd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter the names of three exercises you'd like to focus on improving." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSG-aP-Wlq">
+                                <rect key="frame" x="16" y="12" width="343" height="192"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ic9-WF-idB">
+                                <rect key="frame" x="114" y="262" width="146" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="KidKosmic" family="Kid Kosmic" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ic9-WF-idB" firstAttribute="top" secondItem="TSG-aP-Wlq" secondAttribute="bottom" constant="58" id="4O7-eV-JlH"/>
+                            <constraint firstItem="uHV-qW-IoU" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="9Rr-mF-QUk"/>
+                            <constraint firstItem="ic9-WF-idB" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="BGF-GC-O26"/>
+                            <constraint firstItem="Ugr-1e-lXu" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="G3H-a1-b70"/>
+                            <constraint firstItem="uHV-qW-IoU" firstAttribute="top" secondItem="ic9-WF-idB" secondAttribute="bottom" constant="49" id="NX8-xv-HOU"/>
+                            <constraint firstItem="TSG-aP-Wlq" firstAttribute="width" secondItem="soA-sA-IrG" secondAttribute="width" id="Nmo-9x-iWg"/>
+                            <constraint firstItem="TSG-aP-Wlq" firstAttribute="centerX" secondItem="soA-sA-IrG" secondAttribute="centerX" id="e05-i2-8QT"/>
+                            <constraint firstItem="Ugr-1e-lXu" firstAttribute="top" secondItem="uHV-qW-IoU" secondAttribute="bottom" constant="89" id="h57-jB-Exf"/>
+                            <constraint firstItem="TSG-aP-Wlq" firstAttribute="top" secondItem="frm-eY-zE7" secondAttribute="bottom" constant="35" id="zSP-ML-7Vj"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="text1" destination="ic9-WF-idB" id="qcV-k3-UCn"/>
@@ -229,7 +244,7 @@ you do something
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XS7-1I-WUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="1883"/>
+            <point key="canvasLocation" x="916" y="1882.3088455772115"/>
         </scene>
         <!--Eat View Controller-->
         <scene sceneID="Mx8-hy-N16">
