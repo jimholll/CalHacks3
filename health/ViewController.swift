@@ -59,6 +59,9 @@ var justLeveled = false
 struct defaultsKeys {
     static let keyLevel = "levelStringKey"
     static let keyEXP = "expStringKey"
+    static let keyEx1 = "expEx1Key"
+    static let keyEx2 = "expEx2Key"
+    static let keyEx3 = "expEx3Key"
 }
 
 func findImages(level: Int) -> Array<UIImage>{

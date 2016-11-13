@@ -166,9 +166,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-4p-cXD">
+                                <rect key="frame" x="284" y="592" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="finish"/>
+                                <connections>
+                                    <action selector="finish:" destination="Bgg-6E-dGY" eventType="touchUpInside" id="RTP-ww-fdd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="text1" destination="ic9-WF-idB" id="qcV-k3-UCn"/>
+                        <outlet property="text2" destination="uHV-qW-IoU" id="DQA-XE-QaL"/>
+                        <outlet property="text3" destination="Ugr-1e-lXu" id="yYr-4u-yla"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="fromSettingsToHome" id="OMU-cP-qih"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XS7-1I-WUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -665,12 +679,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="benchLabel" destination="47B-WY-KBa" id="q5c-Zd-xfj"/>
                         <outlet property="bestBenchLabel" destination="xKe-wW-zNF" id="7wI-wd-NYp"/>
                         <outlet property="bestCurlLabel" destination="JXE-iU-SvX" id="cUk-Ha-IxH"/>
                         <outlet property="bestSquatLabel" destination="ESd-sV-z8A" id="bJ7-ez-v7F"/>
                         <outlet property="fivePoundBenchButton" destination="krf-1z-6aA" id="oj3-WH-eCi"/>
                         <outlet property="fivePoundSquatButton" destination="XmH-pt-Q2L" id="Gxx-dj-BfY"/>
+                        <outlet property="labelEx1" destination="47B-WY-KBa" id="7z5-zk-QY7"/>
+                        <outlet property="labelEx2" destination="Twn-O9-uWV" id="uSA-BH-Jmj"/>
+                        <outlet property="labelEx3" destination="xtl-q9-PyO" id="WI5-Cw-Uqg"/>
                         <outlet property="resetButton" destination="9WV-xw-UZz" id="2o1-Pd-0TL"/>
                         <outlet property="twoPoundCurlButton" destination="mxT-aX-39T" id="bAk-lz-Y61"/>
                     </connections>
@@ -716,8 +732,8 @@
         <image name="expbar" width="391" height="71"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GkZ-SG-L1e"/>
+        <segue reference="OMU-cP-qih"/>
+        <segue reference="prG-6f-10N"/>
         <segue reference="QOG-ql-rkY"/>
-        <segue reference="mkp-E9-Rwq"/>
     </inferredMetricsTieBreakers>
 </document>
