@@ -71,12 +71,50 @@ func findImages(level: Int) -> Array<UIImage>{
                       "chillin0011",
                       "chillin0012"]
     } else if (level < 5){
-        
+        imageNames = ["level30001", "level30002", "level30003",
+                      "level30004",
+                      "level30005",
+                      "level30006",
+                      "level30007",
+                      "level30008",
+                      "level30009",
+                      "level30010",
+                      "level30011",
+                      "level30012"]
     } else if (level < 7){
-        
+        imageNames = ["level50001", "level50002", "level50003",
+                      "level50004",
+                      "level50005",
+                      "level50006",
+                      "level50007",
+                      "level50008",
+                      "level50009",
+                      "level50010",
+                      "level50011",
+                      "level50012"]
     } else if (level < 10){
-        
+        imageNames = ["level100001", "level100002", "level100003",
+                      "level100004",
+                      "level100005",
+                      "level100006",
+                      "level100007",
+                      "level100008",
+                      "level100009",
+                      "level100010",
+                      "level100011",
+                      "level100012"]
     } else if (level < 15){
+        imageNames = ["level150001", "level150002", "level150003",
+                      "level150004",
+                      "level150005",
+                      "level150006",
+                      "level150007",
+                      "level150008",
+                      "level150010",
+                      "level150011",
+                      "level150012"]
+        
+    } else if (level < 20) {
         
     } else {
         
