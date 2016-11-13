@@ -10,8 +10,30 @@ import UIKit
 
 class IntroViewController: UIViewController {
 
+    @IBOutlet weak var everyLabel: UILabel!
+    @IBOutlet weak var introDude: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var imagesNames = ["chillin0001", "chillin0002", "chillin0003",
+                           "chillin0004",
+                           "chillin0005",
+                           "chillin0006",
+                           "chillin0007",
+                           "chillin0008",
+                           "chillin0009",
+                           "chillin0010",
+                           "chillin0011",
+                           "chillin0012"]
+        var images = [UIImage]()
+        
+        for i in 0..<imagesNames.count {
+            images.append(UIImage(named: imagesNames[i])!)
+        }
+        
+        introDude.animationImages = images
+        introDude.animationDuration = 1.0
+        introDude.startAnimating()
 
         // Do any additional setup after loading the view.
     }
