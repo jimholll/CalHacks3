@@ -20,9 +20,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // updating level/ initializing it
+        // initializing level
         if (UserDefaults.standard.value(forKey: defaultsKeys.keyLevel) == nil){
             UserDefaults.standard.set(1, forKey:defaultsKeys.keyLevel)
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                self.performSegue(withIdentifier: "fromHomeToIntro", sender: self)
+            }
+            
         }
         
         let lv = UserDefaults.standard.integer(forKey: defaultsKeys.keyLevel)

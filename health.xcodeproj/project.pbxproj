@@ -21,6 +21,8 @@
 		140DD9021DD7EDC300A5AB2E /* LevelUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */; };
 		140DD9041DD7F3CD00A5AB2E /* EatHealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */; };
 		140DD9061DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9051DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift */; };
+		140DD9081DD8C78700A5AB2E /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9071DD8C78700A5AB2E /* IntroViewController.swift */; };
+		140DD90A1DD8CC2100A5AB2E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9091DD8CC2100A5AB2E /* SettingsViewController.swift */; };
 		388981371DD89EED00B7E820 /* kidkosmic2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 388981361DD89EED00B7E820 /* kidkosmic2.ttf */; };
 		38F6F0611DD86518007C1443 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F6F0601DD86518007C1443 /* StatsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelUpViewController.swift; path = ../LevelUpViewController.swift; sourceTree = "<group>"; };
 		140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatHealthyViewController.swift; sourceTree = "<group>"; };
 		140DD9051DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatNotUnhealthyViewController.swift; sourceTree = "<group>"; };
+		140DD9071DD8C78700A5AB2E /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		140DD9091DD8CC2100A5AB2E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		388981361DD89EED00B7E820 /* kidkosmic2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kidkosmic2.ttf; sourceTree = "<group>"; };
 		38F6F0601DD86518007C1443 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +124,8 @@
 				140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */,
 				388981361DD89EED00B7E820 /* kidkosmic2.ttf */,
 				140DD8CD1DD70D6A00A5AB2E /* Main.storyboard */,
+				140DD9091DD8CC2100A5AB2E /* SettingsViewController.swift */,
+				140DD9071DD8C78700A5AB2E /* IntroViewController.swift */,
 				38F6F0601DD86518007C1443 /* StatsViewController.swift */,
 				140DD8FF1DD76A1700A5AB2E /* CardioViewController.swift */,
 				140DD8D01DD70D6A00A5AB2E /* Assets.xcassets */,
@@ -295,8 +301,10 @@
 				140DD9001DD76A1700A5AB2E /* CardioViewController.swift in Sources */,
 				140DD8CA1DD70D6A00A5AB2E /* AppDelegate.swift in Sources */,
 				140DD9021DD7EDC300A5AB2E /* LevelUpViewController.swift in Sources */,
+				140DD9081DD8C78700A5AB2E /* IntroViewController.swift in Sources */,
 				38F6F0611DD86518007C1443 /* StatsViewController.swift in Sources */,
 				140DD9061DD8323F00A5AB2E /* EatNotUnhealthyViewController.swift in Sources */,
+				140DD90A1DD8CC2100A5AB2E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
