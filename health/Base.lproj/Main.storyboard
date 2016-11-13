@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="1148" y="1146"/>
         </scene>
-        <!--View Controller-->
+        <!--Eat Healthy View Controller-->
         <scene sceneID="82D-qc-4Zh">
             <objects>
-                <viewController id="aFE-EI-SVA" sceneMemberID="viewController">
+                <viewController id="aFE-EI-SVA" customClass="EatHealthyViewController" customModule="health" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h1m-Mz-iUK"/>
                         <viewControllerLayoutGuide type="bottom" id="ieD-a2-VGW"/>
@@ -142,21 +142,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ok!"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="u5p-2g-iTE"/>
+                                    <action selector="ok:" destination="aFE-EI-SVA" eventType="touchUpInside" id="23E-Re-FYp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpF-6p-hHR">
                                 <rect key="frame" x="164" y="555" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="bonus!"/>
+                                <connections>
+                                    <action selector="bonus:" destination="aFE-EI-SVA" eventType="touchUpInside" id="65V-c1-Q7f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="JoW-Vs-2Z0" kind="show" identifier="fromEatHealthyToLevelUp" id="f4u-KH-6fu"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="fromEatHealthyToHome" id="jr1-wR-TAX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQo-Uz-sT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="1146"/>
+            <point key="canvasLocation" x="1952.8" y="1145.577211394303"/>
         </scene>
         <!--Exercise View Controller-->
         <scene sceneID="Wf8-dE-v01">
@@ -251,12 +258,15 @@
                                 <rect key="frame" x="172.5" y="441" width="30" height="30"/>
                                 <state key="normal" title="ok!"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Nyv-0S-MOu"/>
+                                    <action selector="ok:" destination="Bly-Fe-JqZ" eventType="touchUpInside" id="hMZ-Fq-FgX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6An-6v-NZN">
                                 <rect key="frame" x="164" y="504" width="47" height="30"/>
                                 <state key="normal" title="bonus!"/>
+                                <connections>
+                                    <action selector="bonus:" destination="Bly-Fe-JqZ" eventType="touchUpInside" id="5ee-Ri-tQF"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VH7-tD-ERq">
                                 <rect key="frame" x="67" y="70" width="241" height="281"/>
@@ -277,14 +287,38 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="VH7-tD-ERq" id="yLF-XX-sce"/>
+                        <segue destination="JoW-Vs-2Z0" kind="show" identifier="fromGymToLevelUp" id="mkp-E9-Rwq"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="fromGymToHome" id="GkZ-SG-L1e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmB-54-Dd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1878" y="-457"/>
         </scene>
+        <!--Level Up View Controller-->
+        <scene sceneID="aSl-p4-nk2">
+            <objects>
+                <viewController id="JoW-Vs-2Z0" customClass="LevelUpViewController" customModule="health" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p3n-V5-dQi"/>
+                        <viewControllerLayoutGuide type="bottom" id="mpn-9i-OIM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WWF-Jm-prR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="fromLevelUpToHome" id="eRo-sK-i4G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSP-Nk-teh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2736" y="-414"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nnI-xC-GiK"/>
+        <segue reference="jr1-wR-TAX"/>
+        <segue reference="f4u-KH-6fu"/>
     </inferredMetricsTieBreakers>
 </document>

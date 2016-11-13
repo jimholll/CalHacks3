@@ -50,6 +50,8 @@ class ViewController: UIViewController {
 
 }
 
+var justLeveled = false
+
 struct defaultsKeys {
     static let keyLevel = "levelStringKey"
     static let keyEXP = "expStringKey"
@@ -98,6 +100,7 @@ func gainExp(amount: Int){
     if(exp + amount >= lv * 25){
         UserDefaults.standard.set((exp+amount) - (lv * 25), forKey: defaultsKeys.keyEXP)
         UserDefaults.standard.set(lv + 1, forKey:defaultsKeys.keyLevel)
+        justLeveled = true
     } else {
     UserDefaults.standard.set(exp + amount, forKey:defaultsKeys.keyEXP)
     }

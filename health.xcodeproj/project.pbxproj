@@ -18,6 +18,8 @@
 		140DD8FC1DD7266900A5AB2E /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD8FB1DD7266900A5AB2E /* GymViewController.swift */; };
 		140DD8FE1DD7330C00A5AB2E /* EatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD8FD1DD7330C00A5AB2E /* EatViewController.swift */; };
 		140DD9001DD76A1700A5AB2E /* CardioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD8FF1DD76A1700A5AB2E /* CardioViewController.swift */; };
+		140DD9021DD7EDC300A5AB2E /* LevelUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */; };
+		140DD9041DD7F3CD00A5AB2E /* EatHealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		140DD8FB1DD7266900A5AB2E /* GymViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
 		140DD8FD1DD7330C00A5AB2E /* EatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatViewController.swift; sourceTree = "<group>"; };
 		140DD8FF1DD76A1700A5AB2E /* CardioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardioViewController.swift; sourceTree = "<group>"; };
+		140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelUpViewController.swift; path = ../LevelUpViewController.swift; sourceTree = "<group>"; };
+		140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatHealthyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				140DD8C91DD70D6A00A5AB2E /* AppDelegate.swift */,
 				140DD8CB1DD70D6A00A5AB2E /* ViewController.swift */,
+				140DD9011DD7EDC300A5AB2E /* LevelUpViewController.swift */,
 				140DD8CD1DD70D6A00A5AB2E /* Main.storyboard */,
 				140DD8FF1DD76A1700A5AB2E /* CardioViewController.swift */,
 				140DD8D01DD70D6A00A5AB2E /* Assets.xcassets */,
@@ -115,6 +120,7 @@
 				140DD8F91DD70ED900A5AB2E /* ExerciseViewController.swift */,
 				140DD8FB1DD7266900A5AB2E /* GymViewController.swift */,
 				140DD8FD1DD7330C00A5AB2E /* EatViewController.swift */,
+				140DD9031DD7F3CD00A5AB2E /* EatHealthyViewController.swift */,
 			);
 			path = health;
 			sourceTree = "<group>";
@@ -272,11 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				140DD8CC1DD70D6A00A5AB2E /* ViewController.swift in Sources */,
+				140DD9041DD7F3CD00A5AB2E /* EatHealthyViewController.swift in Sources */,
 				140DD8FE1DD7330C00A5AB2E /* EatViewController.swift in Sources */,
 				140DD8FA1DD70ED900A5AB2E /* ExerciseViewController.swift in Sources */,
 				140DD8FC1DD7266900A5AB2E /* GymViewController.swift in Sources */,
 				140DD9001DD76A1700A5AB2E /* CardioViewController.swift in Sources */,
 				140DD8CA1DD70D6A00A5AB2E /* AppDelegate.swift in Sources */,
+				140DD9021DD7EDC300A5AB2E /* LevelUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
